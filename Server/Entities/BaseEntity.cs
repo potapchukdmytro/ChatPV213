@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Server.Entities
 {
-
     public interface IBaseEntity
     {
         public int Id { get; set; }
