@@ -87,6 +87,7 @@
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(137, 152);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(194, 23);
             this.passwordTextBox.TabIndex = 4;
             // 
@@ -119,7 +120,7 @@
             this.usernameError.AutoSize = true;
             this.usernameError.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.usernameError.ForeColor = System.Drawing.Color.Firebrick;
-            this.usernameError.Location = new System.Drawing.Point(186, 120);
+            this.usernameError.Location = new System.Drawing.Point(148, 120);
             this.usernameError.Name = "usernameError";
             this.usernameError.Size = new System.Drawing.Size(98, 17);
             this.usernameError.TabIndex = 7;
@@ -131,7 +132,7 @@
             this.passwordError.AutoSize = true;
             this.passwordError.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.passwordError.ForeColor = System.Drawing.Color.Firebrick;
-            this.passwordError.Location = new System.Drawing.Point(186, 178);
+            this.passwordError.Location = new System.Drawing.Point(148, 178);
             this.passwordError.Name = "passwordError";
             this.passwordError.Size = new System.Drawing.Size(96, 17);
             this.passwordError.TabIndex = 8;
