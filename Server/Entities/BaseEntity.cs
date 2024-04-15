@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Server.Entities
 {
-    internal class BaseEntity
+    public interface IBaseEntity 
     {
+        public int Id { get; set; }
+    }
+
+    internal class BaseEntity : IBaseEntity
+    {
+        public int Id { get; set; }
+
     }
 }
