@@ -14,7 +14,7 @@ namespace Server.Entities
         public bool IsDeleted { get; set; }
     }
 
-    public class BaseEntity
+    public class BaseEntity : IBaseEntity
     {
         [Key]
         public int Id { get; set; }

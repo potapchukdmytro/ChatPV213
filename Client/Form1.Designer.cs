@@ -134,6 +134,24 @@
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
+            // label11
+            // 
+            label11.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(52, 8);
+            label11.Name = "label11";
+            label11.Size = new Size(105, 29);
+            label11.TabIndex = 11;
+            label11.Text = "User name";
+            label11.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(6, 8);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(34, 29);
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -418,7 +436,6 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
