@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            TabControl Primary;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,8 +62,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.Primary = new System.Windows.Forms.TabControl();
+            this.Primary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,16 +77,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // Primary
+            // 
+            Primary.Controls.Add(tabPage1);
+            Primary.Controls.Add(tabPage2);
+            Primary.Controls.Add(tabPage3);
+            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Primary.Location = new Point(17, 38);
+            Primary.Name = "Primary";
+            Primary.SelectedIndex = 0;
+            Primary.Size = new Size(268, 481);
+            Primary.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            tabPage1.BackColor = Color.Gray;
+            tabPage1.Location = new Point(4, 26);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(260, 451);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Primary";
+            // 
+            // tabPage2
+            // 
+            tabPage2.BackColor = Color.Gray;
+            tabPage2.Location = new Point(4, 26);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(260, 451);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Groups";
+            // 
+            // tabPage3
+            // 
+            tabPage3.BackColor = Color.Gray;
+            tabPage3.Font = new Font("Impact", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            tabPage3.Location = new Point(4, 26);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.RightToLeft = RightToLeft.No;
+            tabPage3.Size = new Size(260, 451);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Archive";
+            // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(206, 40);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.BackColor = Color.Gray;
+            this.groupBox1.Controls.Add(Primary);
+            this.groupBox1.Controls.Add(label3);
+            this.groupBox1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            this.groupBox1.Location = new Point(252, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(273, 434);
+            this.groupBox1.Size = new Size(301, 530);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -133,6 +186,26 @@
             this.pictureBox3.Size = new System.Drawing.Size(30, 22);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(52, 561);
+            label12.Name = "label12";
+            label12.Size = new Size(55, 19);
+            label12.TabIndex = 23;
+            label12.Text = "Log out";
+            // 
+            // button12
+            // 
+            button12.ForeColor = SystemColors.ControlLight;
+            button12.Image = (Image)resources.GetObject("button12.Image");
+            button12.Location = new Point(6, 553);
+            button12.Name = "button12";
+            button12.Size = new Size(40, 37);
+            button12.TabIndex = 22;
+            button12.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -258,14 +331,14 @@
             // 
             // button7
             // 
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(5, 64);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(35, 28);
-            this.button7.TabIndex = 11;
-            this.button7.UseVisualStyleBackColor = true;
+            button7.BackColor = Color.Gray;
+            button7.ForeColor = SystemColors.ControlLightLight;
+            button7.Image = (Image)resources.GetObject("button7.Image");
+            button7.Location = new Point(6, 86);
+            button7.Name = "button7";
+            button7.Size = new Size(40, 37);
+            button7.TabIndex = 11;
+            button7.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -280,52 +353,52 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.pictureBox2);
-            this.groupBox3.Location = new System.Drawing.Point(484, 40);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(495, 434);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
+            groupBox3.BackColor = Color.Gray;
+            groupBox3.Controls.Add(textBox1);
+            groupBox3.Controls.Add(button15);
+            groupBox3.Controls.Add(button14);
+            groupBox3.Controls.Add(button13);
+            groupBox3.Controls.Add(button5);
+            groupBox3.Controls.Add(button4);
+            groupBox3.Controls.Add(button3);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(pictureBox2);
+            groupBox3.Location = new Point(571, 86);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(536, 530);
+            groupBox3.TabIndex = 0;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "x";
             // 
             // button5
             // 
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(449, 5);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(36, 21);
-            this.button5.TabIndex = 9;
-            this.button5.UseVisualStyleBackColor = true;
+            button5.ForeColor = SystemColors.ControlLight;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.Location = new Point(485, 7);
+            button5.Name = "button5";
+            button5.Size = new Size(41, 28);
+            button5.TabIndex = 9;
+            button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(408, 4);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 22);
-            this.button4.TabIndex = 8;
-            this.button4.UseVisualStyleBackColor = true;
+            button4.ForeColor = SystemColors.ControlLight;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.Location = new Point(438, 6);
+            button4.Name = "button4";
+            button4.Size = new Size(41, 29);
+            button4.TabIndex = 8;
+            button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(367, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(36, 22);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = true;
+            button3.ForeColor = SystemColors.ControlLight;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(391, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(41, 29);
+            button3.TabIndex = 7;
+            button3.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -348,61 +421,56 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(206, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(773, 36);
-            this.panel1.TabIndex = 2;
+            panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(252, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(855, 48);
+            panel1.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(671, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "User name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(757, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(105, 29);
+            label2.TabIndex = 4;
+            label2.Text = "User name";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(636, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 22);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Location = new Point(717, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(34, 29);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(595, 7);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 22);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
+            button2.ForeColor = SystemColors.ControlLight;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(670, 9);
+            button2.Name = "button2";
+            button2.Size = new Size(41, 29);
+            button2.TabIndex = 2;
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(499, 7);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 22);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+ New Chat";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.FromArgb(224, 224, 224);
+            button1.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(560, 9);
+            button1.Name = "button1";
+            button1.Size = new Size(104, 29);
+            button1.TabIndex = 1;
+            button1.Text = "+ New Chat";
+            button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -414,28 +482,68 @@
             this.label1.Text = "Chat";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // button13
+            // 
+            button13.ForeColor = SystemColors.ControlLight;
+            button13.Image = (Image)resources.GetObject("button13.Image");
+            button13.Location = new Point(366, 487);
+            button13.Name = "button13";
+            button13.Size = new Size(40, 37);
+            button13.TabIndex = 24;
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.ForeColor = SystemColors.ControlLight;
+            button14.Image = (Image)resources.GetObject("button14.Image");
+            button14.Location = new Point(427, 488);
+            button14.Name = "button14";
+            button14.Size = new Size(40, 37);
+            button14.TabIndex = 25;
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            button15.ForeColor = SystemColors.ControlLight;
+            button15.Image = (Image)resources.GetObject("button15.Image");
+            button15.Location = new Point(485, 488);
+            button15.Name = "button15";
+            button15.Size = new Size(40, 37);
+            button15.TabIndex = 26;
+            button15.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(224, 224, 224);
+            textBox1.Location = new Point(16, 489);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(329, 27);
+            textBox1.TabIndex = 27;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 474);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(1119, 632);
+            Controls.Add(panel1);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            Primary.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -469,5 +577,14 @@
         private Button button6;
         private Label label11;
         private PictureBox pictureBox3;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
+        private Label label12;
+        private Button button12;
+        private Button button15;
+        private Button button14;
+        private Button button13;
+        private TextBox textBox1;
     }
 }
