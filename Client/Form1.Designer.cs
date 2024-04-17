@@ -32,6 +32,8 @@
             groupBox1 = new GroupBox();
             label3 = new Label();
             groupBox2 = new GroupBox();
+            label11 = new Label();
+            pictureBox3 = new PictureBox();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
@@ -56,15 +58,13 @@
             button2 = new Button();
             button1 = new Button();
             label1 = new Label();
-            label11 = new Label();
-            pictureBox3 = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -77,7 +77,6 @@
             groupBox1.Size = new Size(312, 578);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // label3
             // 
@@ -111,6 +110,24 @@
             groupBox2.Size = new Size(235, 632);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            label11.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(52, 8);
+            label11.Name = "label11";
+            label11.Size = new Size(105, 29);
+            label11.TabIndex = 11;
+            label11.Text = "User name";
+            label11.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(6, 8);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(34, 29);
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
             // 
             // label10
             // 
@@ -245,7 +262,6 @@
             groupBox3.Size = new Size(566, 578);
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
-            groupBox3.Enter += groupBox3_Enter;
             // 
             // button5
             // 
@@ -276,7 +292,6 @@
             button3.Size = new Size(41, 29);
             button3.TabIndex = 7;
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // label4
             // 
@@ -309,7 +324,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(884, 48);
             panel1.TabIndex = 2;
-            panel1.Paint += panel1_Paint;
             // 
             // label2
             // 
@@ -361,24 +375,6 @@
             label1.Text = "Chat";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label11
-            // 
-            label11.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(52, 8);
-            label11.Name = "label11";
-            label11.Size = new Size(105, 29);
-            label11.TabIndex = 11;
-            label11.Text = "User name";
-            label11.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(6, 8);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(34, 29);
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -390,14 +386,15 @@
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
