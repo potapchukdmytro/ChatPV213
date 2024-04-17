@@ -45,7 +45,7 @@ namespace Server.Repositories
                 .FirstOrDefaultAsync(x => x.Id == id);
                 return res;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new Exception("Error");
             }

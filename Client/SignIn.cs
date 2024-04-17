@@ -18,6 +18,7 @@ namespace Client
         {
             InitializeComponent();
             result = DialogResult.Abort;
+            StartPosition = FormStartPosition.CenterParent;
         }
 
         private void logoPicture_Click(object sender, EventArgs e)
