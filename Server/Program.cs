@@ -2,9 +2,15 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ServerClass server = new ServerClass("127.0.0.1", 1024);
+            await server.StartAsync();
+
+            while(server.IsRunning)
+            {
+                Thread.Sleep(1000);
+            }
         }
     }
 }

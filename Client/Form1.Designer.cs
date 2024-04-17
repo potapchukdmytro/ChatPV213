@@ -30,54 +30,52 @@
         {
             TabControl Primary;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
-            groupBox1 = new GroupBox();
-            label3 = new Label();
-            groupBox2 = new GroupBox();
-            label12 = new Label();
-            button12 = new Button();
-            label11 = new Label();
-            pictureBox3 = new PictureBox();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            button11 = new Button();
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            groupBox3 = new GroupBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            panel1 = new Panel();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            button2 = new Button();
-            button1 = new Button();
-            label1 = new Label();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            textBox1 = new TextBox();
-            Primary = new TabControl();
-            Primary.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.Primary = new System.Windows.Forms.TabControl();
+            this.Primary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // Primary
             // 
@@ -125,49 +123,69 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.Gray;
-            groupBox1.Controls.Add(Primary);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox1.Location = new Point(252, 86);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(301, 530);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
+            this.groupBox1.BackColor = Color.Gray;
+            this.groupBox1.Controls.Add(Primary);
+            this.groupBox1.Controls.Add(label3);
+            this.groupBox1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            this.groupBox1.Location = new Point(252, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new Size(301, 530);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
             // 
             // label3
             // 
-            label3.Location = new Point(6, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 35);
-            label3.TabIndex = 0;
-            label3.Text = "Inbox";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
+            this.label3.Location = new System.Drawing.Point(5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 26);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Inbox";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = Color.Gray;
-            groupBox2.Controls.Add(label12);
-            groupBox2.Controls.Add(button12);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(pictureBox3);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(button11);
-            groupBox2.Controls.Add(button10);
-            groupBox2.Controls.Add(button9);
-            groupBox2.Controls.Add(button8);
-            groupBox2.Controls.Add(button7);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Location = new Point(12, 12);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(223, 604);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
+            this.groupBox2.BackColor = System.Drawing.Color.Gray;
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.button11);
+            this.groupBox2.Controls.Add(this.button10);
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(206, 474);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(46, 6);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(92, 22);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "User name";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(5, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 22);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // label12
             // 
@@ -209,103 +227,107 @@
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(52, 266);
-            label10.Name = "label10";
-            label10.Size = new Size(55, 19);
-            label10.TabIndex = 21;
-            label10.Text = "Setting";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(46, 200);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 16);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Setting";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(52, 223);
-            label9.Name = "label9";
-            label9.Size = new Size(55, 19);
-            label9.TabIndex = 20;
-            label9.Text = "Privacy";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(46, 167);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(43, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Privacy";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(52, 180);
-            label8.Name = "label8";
-            label8.Size = new Size(58, 19);
-            label8.TabIndex = 19;
-            label8.Text = "Contact";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(46, 135);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 16);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Contact";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(52, 137);
-            label7.Name = "label7";
-            label7.Size = new Size(40, 19);
-            label7.TabIndex = 18;
-            label7.Text = "Colls";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(46, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 16);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Colls";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(52, 94);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 19);
-            label6.TabIndex = 17;
-            label6.Text = "Chat";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(46, 70);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Chat";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(52, 51);
-            label5.Name = "label5";
-            label5.Size = new Size(62, 19);
-            label5.TabIndex = 16;
-            label5.Text = "Exsplore";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(46, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 16);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Exsplore";
             // 
             // button11
             // 
-            button11.ForeColor = SystemColors.ControlLight;
-            button11.Image = (Image)resources.GetObject("button11.Image");
-            button11.Location = new Point(6, 172);
-            button11.Name = "button11";
-            button11.Size = new Size(40, 37);
-            button11.TabIndex = 15;
-            button11.UseVisualStyleBackColor = true;
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.Location = new System.Drawing.Point(5, 129);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(35, 28);
+            this.button11.TabIndex = 15;
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            button10.ForeColor = SystemColors.ControlLight;
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.Location = new Point(6, 215);
-            button10.Name = "button10";
-            button10.Size = new Size(40, 37);
-            button10.TabIndex = 14;
-            button10.UseVisualStyleBackColor = true;
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(5, 161);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(35, 28);
+            this.button10.TabIndex = 14;
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            button9.ForeColor = SystemColors.ControlLight;
-            button9.Image = (Image)resources.GetObject("button9.Image");
-            button9.Location = new Point(6, 258);
-            button9.Name = "button9";
-            button9.Size = new Size(40, 37);
-            button9.TabIndex = 13;
-            button9.UseVisualStyleBackColor = true;
+            this.button9.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(5, 194);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(35, 28);
+            this.button9.TabIndex = 13;
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            button8.ForeColor = SystemColors.ControlLight;
-            button8.Image = (Image)resources.GetObject("button8.Image");
-            button8.Location = new Point(6, 129);
-            button8.Name = "button8";
-            button8.Size = new Size(40, 37);
-            button8.TabIndex = 12;
-            button8.UseVisualStyleBackColor = true;
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(5, 97);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 28);
+            this.button8.TabIndex = 12;
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -320,13 +342,14 @@
             // 
             // button6
             // 
-            button6.ForeColor = SystemColors.ControlLight;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(6, 43);
-            button6.Name = "button6";
-            button6.Size = new Size(40, 37);
-            button6.TabIndex = 10;
-            button6.UseVisualStyleBackColor = true;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(5, 32);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 28);
+            this.button6.TabIndex = 10;
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -379,21 +402,22 @@
             // 
             // label4
             // 
-            label4.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(56, 6);
-            label4.Name = "label4";
-            label4.Size = new Size(105, 29);
-            label4.TabIndex = 6;
-            label4.Text = "User name";
-            label4.TextAlign = ContentAlignment.MiddleLeft;
+            this.label4.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(49, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 22);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "User name";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(16, 6);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(34, 29);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 22);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -450,13 +474,13 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Impact", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(113, 48);
-            label1.TabIndex = 0;
-            label1.Text = "Chat";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
+            this.label1.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Chat";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button13
             // 
