@@ -12,9 +12,24 @@ namespace Client
 {
     public partial class SingUp : Form
     {
+        public DialogResult result;
+
         public SingUp()
         {
             InitializeComponent();
+            result = DialogResult.Abort;
+            StartPosition = FormStartPosition.CenterParent;
+        }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            result = DialogResult.OK;
+            Close();
+        }
+
+        private void buttonSingUp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
