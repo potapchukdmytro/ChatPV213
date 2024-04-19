@@ -39,5 +39,25 @@ namespace Client
 
             }
         }
+
+        private async Task SendUserProfileToServer(UserModel userProfile)
+        {
+            try
+            {
+                TcpClient client = new TcpClient();
+
+                string json = JsonConvert.SerializeObject(userProfile);
+
+                byte[] data = Encoding.UTF8.GetBytes(json);
+
+                var stream = client.GetStream();
+
+                await stream.WriteAsync(data, 0, data.Length);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
