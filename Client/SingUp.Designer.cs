@@ -181,6 +181,7 @@
             this.labelNameValidation.Size = new System.Drawing.Size(38, 15);
             this.labelNameValidation.TabIndex = 13;
             this.labelNameValidation.Text = "label7";
+            this.labelNameValidation.Visible = false;
             // 
             // labelSurnameValidation
             // 
@@ -191,6 +192,7 @@
             this.labelSurnameValidation.Size = new System.Drawing.Size(38, 15);
             this.labelSurnameValidation.TabIndex = 14;
             this.labelSurnameValidation.Text = "label8";
+            this.labelSurnameValidation.Visible = false;
             // 
             // labelUserameValidation
             // 
@@ -201,6 +203,7 @@
             this.labelUserameValidation.Size = new System.Drawing.Size(38, 15);
             this.labelUserameValidation.TabIndex = 15;
             this.labelUserameValidation.Text = "label9";
+            this.labelUserameValidation.Visible = false;
             // 
             // labelEmailValidation
             // 
@@ -211,6 +214,7 @@
             this.labelEmailValidation.Size = new System.Drawing.Size(44, 15);
             this.labelEmailValidation.TabIndex = 16;
             this.labelEmailValidation.Text = "label10";
+            this.labelEmailValidation.Visible = false;
             // 
             // labelPasswordValidation
             // 
@@ -221,6 +225,7 @@
             this.labelPasswordValidation.Size = new System.Drawing.Size(44, 15);
             this.labelPasswordValidation.TabIndex = 17;
             this.labelPasswordValidation.Text = "label11";
+            this.labelPasswordValidation.Visible = false;
             // 
             // label2
             // 
