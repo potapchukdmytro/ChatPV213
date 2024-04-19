@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Client;
-using Client.Models;
+﻿using Client.Models;
 using Client.Validation;
 
 namespace Client
@@ -28,7 +18,7 @@ namespace Client
             usernameError.Visible = false;
             passwordError.Visible = false;
 
-            LogInModel model= new LogInModel()
+            LogInModel model = new LogInModel()
             {
                 Login = usernameTextBox.Text,
                 Password = passwordTextBox.Text,
