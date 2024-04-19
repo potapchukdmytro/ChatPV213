@@ -30,60 +30,60 @@
         {
             TabControl Primary;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
-            groupBox1 = new GroupBox();
-            label3 = new Label();
-            groupBox2 = new GroupBox();
-            label12 = new Label();
-            button12 = new Button();
-            label11 = new Label();
-            pictureBox3 = new PictureBox();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            button11 = new Button();
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            groupBox3 = new GroupBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            panel1 = new Panel();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            button2 = new Button();
-            button1 = new Button();
-            label1 = new Label();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            textBox1 = new TextBox();
+            tabPagePrimary = new TabPage();
+            tabPageGroups = new TabPage();
+            tabPageArchive = new TabPage();
+            groupBoxInbox = new GroupBox();
+            labelInbox = new Label();
+            groupBoxMenu = new GroupBox();
+            labelLogOut = new Label();
+            buttonLogOut = new Button();
+            labelUserUameLeft = new Label();
+            pictureBoxAvatarLeft = new PictureBox();
+            labelSetting = new Label();
+            labelPrivacy = new Label();
+            labelContact = new Label();
+            labelColls = new Label();
+            labelChat = new Label();
+            labelExsplore = new Label();
+            buttonContact = new Button();
+            buttonPrivacy = new Button();
+            buttonSetting = new Button();
+            buttonColls = new Button();
+            buttonChat = new Button();
+            buttonExplore = new Button();
+            groupBoxChat = new GroupBox();
+            textBoxMessage = new TextBox();
+            buttonSend = new Button();
+            buttonSendVoice = new Button();
+            buttonSendImage = new Button();
+            buttonChatEnd = new Button();
+            buttonVoiceChat = new Button();
+            buttonVideoChat = new Button();
+            labelUserNameCenter = new Label();
+            pictureBoxAvatarCenter = new PictureBox();
+            panel = new Panel();
+            labelUserNameRight = new Label();
+            pictureBoxAvatarRight = new PictureBox();
+            buttonAlert = new Button();
+            buttonNewChat = new Button();
+            labelChatTitle = new Label();
             Primary = new TabControl();
             Primary.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBoxInbox.SuspendLayout();
+            groupBoxMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).BeginInit();
+            groupBoxChat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarCenter).BeginInit();
+            panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).BeginInit();
             SuspendLayout();
             // 
             // Primary
             // 
-            Primary.Controls.Add(tabPage1);
-            Primary.Controls.Add(tabPage2);
-            Primary.Controls.Add(tabPage3);
+            Primary.Controls.Add(tabPagePrimary);
+            Primary.Controls.Add(tabPageGroups);
+            Primary.Controls.Add(tabPageArchive);
             Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             Primary.Location = new Point(17, 38);
             Primary.Name = "Primary";
@@ -91,410 +91,410 @@
             Primary.Size = new Size(268, 481);
             Primary.TabIndex = 1;
             // 
-            // tabPage1
-            // 
-            tabPage1.BackColor = Color.Gray;
-            tabPage1.Location = new Point(4, 26);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(260, 451);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Primary";
-            // 
-            // tabPage2
-            // 
-            tabPage2.BackColor = Color.Gray;
-            tabPage2.Location = new Point(4, 26);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(260, 451);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Groups";
-            // 
-            // tabPage3
-            // 
-            tabPage3.BackColor = Color.Gray;
-            tabPage3.Font = new Font("Impact", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            tabPage3.Location = new Point(4, 26);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.RightToLeft = RightToLeft.No;
-            tabPage3.Size = new Size(260, 451);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Archive";
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.Gray;
-            groupBox1.Controls.Add(Primary);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox1.Location = new Point(252, 86);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(301, 530);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.Location = new Point(6, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 35);
-            label3.TabIndex = 0;
-            label3.Text = "Inbox";
-            label3.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // groupBox2
-            // 
-            groupBox2.BackColor = Color.Gray;
-            groupBox2.Controls.Add(label12);
-            groupBox2.Controls.Add(button12);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(pictureBox3);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(button11);
-            groupBox2.Controls.Add(button10);
-            groupBox2.Controls.Add(button9);
-            groupBox2.Controls.Add(button8);
-            groupBox2.Controls.Add(button7);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Location = new Point(12, 12);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(223, 604);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(52, 561);
-            label12.Name = "label12";
-            label12.Size = new Size(55, 19);
-            label12.TabIndex = 23;
-            label12.Text = "Log out";
-            // 
-            // button12
-            // 
-            button12.ForeColor = SystemColors.ControlLight;
-            button12.Image = (Image)resources.GetObject("button12.Image");
-            button12.Location = new Point(6, 553);
-            button12.Name = "button12";
-            button12.Size = new Size(40, 37);
-            button12.TabIndex = 22;
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(52, 8);
-            label11.Name = "label11";
-            label11.Size = new Size(105, 29);
-            label11.TabIndex = 11;
-            label11.Text = "User name";
-            label11.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(6, 8);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(34, 29);
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(52, 266);
-            label10.Name = "label10";
-            label10.Size = new Size(55, 19);
-            label10.TabIndex = 21;
-            label10.Text = "Setting";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(52, 223);
-            label9.Name = "label9";
-            label9.Size = new Size(55, 19);
-            label9.TabIndex = 20;
-            label9.Text = "Privacy";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(52, 180);
-            label8.Name = "label8";
-            label8.Size = new Size(58, 19);
-            label8.TabIndex = 19;
-            label8.Text = "Contact";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(52, 137);
-            label7.Name = "label7";
-            label7.Size = new Size(40, 19);
-            label7.TabIndex = 18;
-            label7.Text = "Colls";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(52, 94);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 19);
-            label6.TabIndex = 17;
-            label6.Text = "Chat";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(52, 51);
-            label5.Name = "label5";
-            label5.Size = new Size(62, 19);
-            label5.TabIndex = 16;
-            label5.Text = "Exsplore";
-            // 
-            // button11
-            // 
-            button11.ForeColor = SystemColors.ControlLight;
-            button11.Image = (Image)resources.GetObject("button11.Image");
-            button11.Location = new Point(6, 172);
-            button11.Name = "button11";
-            button11.Size = new Size(40, 37);
-            button11.TabIndex = 15;
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            button10.ForeColor = SystemColors.ControlLight;
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.Location = new Point(6, 215);
-            button10.Name = "button10";
-            button10.Size = new Size(40, 37);
-            button10.TabIndex = 14;
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.ForeColor = SystemColors.ControlLight;
-            button9.Image = (Image)resources.GetObject("button9.Image");
-            button9.Location = new Point(6, 258);
-            button9.Name = "button9";
-            button9.Size = new Size(40, 37);
-            button9.TabIndex = 13;
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.ForeColor = SystemColors.ControlLight;
-            button8.Image = (Image)resources.GetObject("button8.Image");
-            button8.Location = new Point(6, 129);
-            button8.Name = "button8";
-            button8.Size = new Size(40, 37);
-            button8.TabIndex = 12;
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.Gray;
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(6, 86);
-            button7.Name = "button7";
-            button7.Size = new Size(40, 37);
-            button7.TabIndex = 11;
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.ForeColor = SystemColors.ControlLight;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(6, 43);
-            button6.Name = "button6";
-            button6.Size = new Size(40, 37);
-            button6.TabIndex = 10;
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            groupBox3.BackColor = Color.Gray;
-            groupBox3.Controls.Add(textBox1);
-            groupBox3.Controls.Add(button15);
-            groupBox3.Controls.Add(button14);
-            groupBox3.Controls.Add(button13);
-            groupBox3.Controls.Add(button5);
-            groupBox3.Controls.Add(button4);
-            groupBox3.Controls.Add(button3);
-            groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(pictureBox2);
-            groupBox3.Location = new Point(571, 86);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(536, 530);
-            groupBox3.TabIndex = 0;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "x";
-            // 
-            // button5
-            // 
-            button5.ForeColor = SystemColors.ControlLight;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(485, 7);
-            button5.Name = "button5";
-            button5.Size = new Size(41, 28);
-            button5.TabIndex = 9;
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.ForeColor = SystemColors.ControlLight;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(438, 6);
-            button4.Name = "button4";
-            button4.Size = new Size(41, 29);
-            button4.TabIndex = 8;
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.ForeColor = SystemColors.ControlLight;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(391, 6);
-            button3.Name = "button3";
-            button3.Size = new Size(41, 29);
-            button3.TabIndex = 7;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            label4.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(56, 6);
-            label4.Name = "label4";
-            label4.Size = new Size(105, 29);
-            label4.TabIndex = 6;
-            label4.Text = "User name";
-            label4.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(16, 6);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(34, 29);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Gray;
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(252, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(855, 48);
-            panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            label2.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(757, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(105, 29);
-            label2.TabIndex = 4;
-            label2.Text = "User name";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(717, 9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(34, 29);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            button2.ForeColor = SystemColors.ControlLight;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(670, 9);
-            button2.Name = "button2";
-            button2.Size = new Size(41, 29);
-            button2.TabIndex = 2;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(224, 224, 224);
-            button1.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(560, 9);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 29);
-            button1.TabIndex = 1;
-            button1.Text = "+ New Chat";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.Font = new Font("Impact", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(113, 48);
-            label1.TabIndex = 0;
-            label1.Text = "Chat";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // button13
-            // 
-            button13.ForeColor = SystemColors.ControlLight;
-            button13.Image = (Image)resources.GetObject("button13.Image");
-            button13.Location = new Point(366, 487);
-            button13.Name = "button13";
-            button13.Size = new Size(40, 37);
-            button13.TabIndex = 24;
-            button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            button14.ForeColor = SystemColors.ControlLight;
-            button14.Image = (Image)resources.GetObject("button14.Image");
-            button14.Location = new Point(427, 488);
-            button14.Name = "button14";
-            button14.Size = new Size(40, 37);
-            button14.TabIndex = 25;
-            button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            button15.ForeColor = SystemColors.ControlLight;
-            button15.Image = (Image)resources.GetObject("button15.Image");
-            button15.Location = new Point(485, 488);
-            button15.Name = "button15";
-            button15.Size = new Size(40, 37);
-            button15.TabIndex = 26;
-            button15.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(224, 224, 224);
-            textBox1.Location = new Point(16, 489);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(329, 27);
-            textBox1.TabIndex = 27;
+            // tabPagePrimary
+            // 
+            tabPagePrimary.BackColor = Color.Gray;
+            tabPagePrimary.Location = new Point(4, 26);
+            tabPagePrimary.Name = "tabPagePrimary";
+            tabPagePrimary.Padding = new Padding(3);
+            tabPagePrimary.Size = new Size(260, 451);
+            tabPagePrimary.TabIndex = 0;
+            tabPagePrimary.Text = "Primary";
+            // 
+            // tabPageGroups
+            // 
+            tabPageGroups.BackColor = Color.Gray;
+            tabPageGroups.Location = new Point(4, 26);
+            tabPageGroups.Name = "tabPageGroups";
+            tabPageGroups.Padding = new Padding(3);
+            tabPageGroups.Size = new Size(260, 451);
+            tabPageGroups.TabIndex = 1;
+            tabPageGroups.Text = "Groups";
+            // 
+            // tabPageArchive
+            // 
+            tabPageArchive.BackColor = Color.Gray;
+            tabPageArchive.Font = new Font("Impact", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            tabPageArchive.Location = new Point(4, 26);
+            tabPageArchive.Name = "tabPageArchive";
+            tabPageArchive.Padding = new Padding(3);
+            tabPageArchive.RightToLeft = RightToLeft.No;
+            tabPageArchive.Size = new Size(260, 451);
+            tabPageArchive.TabIndex = 2;
+            tabPageArchive.Text = "Archive";
+            // 
+            // groupBoxInbox
+            // 
+            groupBoxInbox.BackColor = Color.Gray;
+            groupBoxInbox.Controls.Add(Primary);
+            groupBoxInbox.Controls.Add(labelInbox);
+            groupBoxInbox.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBoxInbox.Location = new Point(252, 86);
+            groupBoxInbox.Name = "groupBoxInbox";
+            groupBoxInbox.Size = new Size(301, 530);
+            groupBoxInbox.TabIndex = 0;
+            groupBoxInbox.TabStop = false;
+            // 
+            // labelInbox
+            // 
+            labelInbox.Location = new Point(6, 0);
+            labelInbox.Name = "labelInbox";
+            labelInbox.Size = new Size(80, 35);
+            labelInbox.TabIndex = 0;
+            labelInbox.Text = "Inbox";
+            labelInbox.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // groupBoxMenu
+            // 
+            groupBoxMenu.BackColor = Color.Gray;
+            groupBoxMenu.Controls.Add(labelLogOut);
+            groupBoxMenu.Controls.Add(buttonLogOut);
+            groupBoxMenu.Controls.Add(labelUserUameLeft);
+            groupBoxMenu.Controls.Add(pictureBoxAvatarLeft);
+            groupBoxMenu.Controls.Add(labelSetting);
+            groupBoxMenu.Controls.Add(labelPrivacy);
+            groupBoxMenu.Controls.Add(labelContact);
+            groupBoxMenu.Controls.Add(labelColls);
+            groupBoxMenu.Controls.Add(labelChat);
+            groupBoxMenu.Controls.Add(labelExsplore);
+            groupBoxMenu.Controls.Add(buttonContact);
+            groupBoxMenu.Controls.Add(buttonPrivacy);
+            groupBoxMenu.Controls.Add(buttonSetting);
+            groupBoxMenu.Controls.Add(buttonColls);
+            groupBoxMenu.Controls.Add(buttonChat);
+            groupBoxMenu.Controls.Add(buttonExplore);
+            groupBoxMenu.Location = new Point(12, 12);
+            groupBoxMenu.Name = "groupBoxMenu";
+            groupBoxMenu.Size = new Size(223, 604);
+            groupBoxMenu.TabIndex = 1;
+            groupBoxMenu.TabStop = false;
+            // 
+            // labelLogOut
+            // 
+            labelLogOut.AutoSize = true;
+            labelLogOut.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelLogOut.Location = new Point(52, 561);
+            labelLogOut.Name = "labelLogOut";
+            labelLogOut.Size = new Size(55, 19);
+            labelLogOut.TabIndex = 23;
+            labelLogOut.Text = "Log out";
+            // 
+            // buttonLogOut
+            // 
+            buttonLogOut.ForeColor = SystemColors.ControlLight;
+            buttonLogOut.Image = (Image)resources.GetObject("buttonLogOut.Image");
+            buttonLogOut.Location = new Point(6, 553);
+            buttonLogOut.Name = "buttonLogOut";
+            buttonLogOut.Size = new Size(40, 37);
+            buttonLogOut.TabIndex = 22;
+            buttonLogOut.UseVisualStyleBackColor = true;
+            // 
+            // labelUserUameLeft
+            // 
+            labelUserUameLeft.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserUameLeft.Location = new Point(52, 8);
+            labelUserUameLeft.Name = "labelUserUameLeft";
+            labelUserUameLeft.Size = new Size(105, 29);
+            labelUserUameLeft.TabIndex = 11;
+            labelUserUameLeft.Text = "User name";
+            labelUserUameLeft.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarLeft
+            // 
+            pictureBoxAvatarLeft.Location = new Point(6, 8);
+            pictureBoxAvatarLeft.Name = "pictureBoxAvatarLeft";
+            pictureBoxAvatarLeft.Size = new Size(34, 29);
+            pictureBoxAvatarLeft.TabIndex = 10;
+            pictureBoxAvatarLeft.TabStop = false;
+            // 
+            // labelSetting
+            // 
+            labelSetting.AutoSize = true;
+            labelSetting.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSetting.Location = new Point(52, 266);
+            labelSetting.Name = "labelSetting";
+            labelSetting.Size = new Size(55, 19);
+            labelSetting.TabIndex = 21;
+            labelSetting.Text = "Setting";
+            // 
+            // labelPrivacy
+            // 
+            labelPrivacy.AutoSize = true;
+            labelPrivacy.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPrivacy.Location = new Point(52, 223);
+            labelPrivacy.Name = "labelPrivacy";
+            labelPrivacy.Size = new Size(55, 19);
+            labelPrivacy.TabIndex = 20;
+            labelPrivacy.Text = "Privacy";
+            // 
+            // labelContact
+            // 
+            labelContact.AutoSize = true;
+            labelContact.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelContact.Location = new Point(52, 180);
+            labelContact.Name = "labelContact";
+            labelContact.Size = new Size(58, 19);
+            labelContact.TabIndex = 19;
+            labelContact.Text = "Contact";
+            // 
+            // labelColls
+            // 
+            labelColls.AutoSize = true;
+            labelColls.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelColls.Location = new Point(52, 137);
+            labelColls.Name = "labelColls";
+            labelColls.Size = new Size(40, 19);
+            labelColls.TabIndex = 18;
+            labelColls.Text = "Colls";
+            // 
+            // labelChat
+            // 
+            labelChat.AutoSize = true;
+            labelChat.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelChat.Location = new Point(52, 94);
+            labelChat.Name = "labelChat";
+            labelChat.Size = new Size(38, 19);
+            labelChat.TabIndex = 17;
+            labelChat.Text = "Chat";
+            // 
+            // labelExsplore
+            // 
+            labelExsplore.AutoSize = true;
+            labelExsplore.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelExsplore.Location = new Point(52, 51);
+            labelExsplore.Name = "labelExsplore";
+            labelExsplore.Size = new Size(62, 19);
+            labelExsplore.TabIndex = 16;
+            labelExsplore.Text = "Exsplore";
+            // 
+            // buttonContact
+            // 
+            buttonContact.ForeColor = SystemColors.ControlLight;
+            buttonContact.Image = (Image)resources.GetObject("buttonContact.Image");
+            buttonContact.Location = new Point(6, 172);
+            buttonContact.Name = "buttonContact";
+            buttonContact.Size = new Size(40, 37);
+            buttonContact.TabIndex = 15;
+            buttonContact.UseVisualStyleBackColor = true;
+            // 
+            // buttonPrivacy
+            // 
+            buttonPrivacy.ForeColor = SystemColors.ControlLight;
+            buttonPrivacy.Image = (Image)resources.GetObject("buttonPrivacy.Image");
+            buttonPrivacy.Location = new Point(6, 215);
+            buttonPrivacy.Name = "buttonPrivacy";
+            buttonPrivacy.Size = new Size(40, 37);
+            buttonPrivacy.TabIndex = 14;
+            buttonPrivacy.UseVisualStyleBackColor = true;
+            // 
+            // buttonSetting
+            // 
+            buttonSetting.ForeColor = SystemColors.ControlLight;
+            buttonSetting.Image = (Image)resources.GetObject("buttonSetting.Image");
+            buttonSetting.Location = new Point(6, 258);
+            buttonSetting.Name = "buttonSetting";
+            buttonSetting.Size = new Size(40, 37);
+            buttonSetting.TabIndex = 13;
+            buttonSetting.UseVisualStyleBackColor = true;
+            // 
+            // buttonColls
+            // 
+            buttonColls.ForeColor = SystemColors.ControlLight;
+            buttonColls.Image = (Image)resources.GetObject("buttonColls.Image");
+            buttonColls.Location = new Point(6, 129);
+            buttonColls.Name = "buttonColls";
+            buttonColls.Size = new Size(40, 37);
+            buttonColls.TabIndex = 12;
+            buttonColls.UseVisualStyleBackColor = true;
+            // 
+            // buttonChat
+            // 
+            buttonChat.BackColor = Color.Gray;
+            buttonChat.ForeColor = SystemColors.ControlLightLight;
+            buttonChat.Image = (Image)resources.GetObject("buttonChat.Image");
+            buttonChat.Location = new Point(6, 86);
+            buttonChat.Name = "buttonChat";
+            buttonChat.Size = new Size(40, 37);
+            buttonChat.TabIndex = 11;
+            buttonChat.UseVisualStyleBackColor = false;
+            // 
+            // buttonExplore
+            // 
+            buttonExplore.ForeColor = SystemColors.ControlLight;
+            buttonExplore.Image = (Image)resources.GetObject("buttonExplore.Image");
+            buttonExplore.Location = new Point(6, 43);
+            buttonExplore.Name = "buttonExplore";
+            buttonExplore.Size = new Size(40, 37);
+            buttonExplore.TabIndex = 10;
+            buttonExplore.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxChat
+            // 
+            groupBoxChat.BackColor = Color.Gray;
+            groupBoxChat.Controls.Add(textBoxMessage);
+            groupBoxChat.Controls.Add(buttonSend);
+            groupBoxChat.Controls.Add(buttonSendVoice);
+            groupBoxChat.Controls.Add(buttonSendImage);
+            groupBoxChat.Controls.Add(buttonChatEnd);
+            groupBoxChat.Controls.Add(buttonVoiceChat);
+            groupBoxChat.Controls.Add(buttonVideoChat);
+            groupBoxChat.Controls.Add(labelUserNameCenter);
+            groupBoxChat.Controls.Add(pictureBoxAvatarCenter);
+            groupBoxChat.Location = new Point(571, 86);
+            groupBoxChat.Name = "groupBoxChat";
+            groupBoxChat.Size = new Size(536, 530);
+            groupBoxChat.TabIndex = 0;
+            groupBoxChat.TabStop = false;
+            groupBoxChat.Text = "x";
+            // 
+            // textBoxMessage
+            // 
+            textBoxMessage.BackColor = Color.FromArgb(224, 224, 224);
+            textBoxMessage.Location = new Point(16, 489);
+            textBoxMessage.Name = "textBoxMessage";
+            textBoxMessage.Size = new Size(329, 27);
+            textBoxMessage.TabIndex = 27;
+            // 
+            // buttonSend
+            // 
+            buttonSend.ForeColor = SystemColors.ControlLight;
+            buttonSend.Image = (Image)resources.GetObject("buttonSend.Image");
+            buttonSend.Location = new Point(485, 488);
+            buttonSend.Name = "buttonSend";
+            buttonSend.Size = new Size(40, 37);
+            buttonSend.TabIndex = 26;
+            buttonSend.UseVisualStyleBackColor = true;
+            // 
+            // buttonSendVoice
+            // 
+            buttonSendVoice.ForeColor = SystemColors.ControlLight;
+            buttonSendVoice.Image = (Image)resources.GetObject("buttonSendVoice.Image");
+            buttonSendVoice.Location = new Point(427, 488);
+            buttonSendVoice.Name = "buttonSendVoice";
+            buttonSendVoice.Size = new Size(40, 37);
+            buttonSendVoice.TabIndex = 25;
+            buttonSendVoice.UseVisualStyleBackColor = true;
+            // 
+            // buttonSendImage
+            // 
+            buttonSendImage.ForeColor = SystemColors.ControlLight;
+            buttonSendImage.Image = (Image)resources.GetObject("buttonSendImage.Image");
+            buttonSendImage.Location = new Point(366, 487);
+            buttonSendImage.Name = "buttonSendImage";
+            buttonSendImage.Size = new Size(40, 37);
+            buttonSendImage.TabIndex = 24;
+            buttonSendImage.UseVisualStyleBackColor = true;
+            // 
+            // buttonChatEnd
+            // 
+            buttonChatEnd.ForeColor = SystemColors.ControlLight;
+            buttonChatEnd.Image = (Image)resources.GetObject("buttonChatEnd.Image");
+            buttonChatEnd.Location = new Point(485, 7);
+            buttonChatEnd.Name = "buttonChatEnd";
+            buttonChatEnd.Size = new Size(41, 28);
+            buttonChatEnd.TabIndex = 9;
+            buttonChatEnd.UseVisualStyleBackColor = true;
+            // 
+            // buttonVoiceChat
+            // 
+            buttonVoiceChat.ForeColor = SystemColors.ControlLight;
+            buttonVoiceChat.Image = (Image)resources.GetObject("buttonVoiceChat.Image");
+            buttonVoiceChat.Location = new Point(438, 6);
+            buttonVoiceChat.Name = "buttonVoiceChat";
+            buttonVoiceChat.Size = new Size(41, 29);
+            buttonVoiceChat.TabIndex = 8;
+            buttonVoiceChat.UseVisualStyleBackColor = true;
+            // 
+            // buttonVideoChat
+            // 
+            buttonVideoChat.ForeColor = SystemColors.ControlLight;
+            buttonVideoChat.Image = (Image)resources.GetObject("buttonVideoChat.Image");
+            buttonVideoChat.Location = new Point(391, 6);
+            buttonVideoChat.Name = "buttonVideoChat";
+            buttonVideoChat.Size = new Size(41, 29);
+            buttonVideoChat.TabIndex = 7;
+            buttonVideoChat.UseVisualStyleBackColor = true;
+            // 
+            // labelUserNameCenter
+            // 
+            labelUserNameCenter.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserNameCenter.Location = new Point(56, 6);
+            labelUserNameCenter.Name = "labelUserNameCenter";
+            labelUserNameCenter.Size = new Size(105, 29);
+            labelUserNameCenter.TabIndex = 6;
+            labelUserNameCenter.Text = "User name";
+            labelUserNameCenter.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarCenter
+            // 
+            pictureBoxAvatarCenter.Location = new Point(16, 6);
+            pictureBoxAvatarCenter.Name = "pictureBoxAvatarCenter";
+            pictureBoxAvatarCenter.Size = new Size(34, 29);
+            pictureBoxAvatarCenter.TabIndex = 5;
+            pictureBoxAvatarCenter.TabStop = false;
+            // 
+            // panel
+            // 
+            panel.BackColor = Color.Gray;
+            panel.Controls.Add(labelUserNameRight);
+            panel.Controls.Add(pictureBoxAvatarRight);
+            panel.Controls.Add(buttonAlert);
+            panel.Controls.Add(buttonNewChat);
+            panel.Controls.Add(labelChatTitle);
+            panel.Location = new Point(252, 12);
+            panel.Name = "panel";
+            panel.Size = new Size(855, 48);
+            panel.TabIndex = 2;
+            // 
+            // labelUserNameRight
+            // 
+            labelUserNameRight.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserNameRight.Location = new Point(757, 9);
+            labelUserNameRight.Name = "labelUserNameRight";
+            labelUserNameRight.Size = new Size(105, 29);
+            labelUserNameRight.TabIndex = 4;
+            labelUserNameRight.Text = "User name";
+            labelUserNameRight.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarRight
+            // 
+            pictureBoxAvatarRight.Location = new Point(717, 9);
+            pictureBoxAvatarRight.Name = "pictureBoxAvatarRight";
+            pictureBoxAvatarRight.Size = new Size(34, 29);
+            pictureBoxAvatarRight.TabIndex = 3;
+            pictureBoxAvatarRight.TabStop = false;
+            // 
+            // buttonAlert
+            // 
+            buttonAlert.ForeColor = SystemColors.ControlLight;
+            buttonAlert.Image = (Image)resources.GetObject("buttonAlert.Image");
+            buttonAlert.Location = new Point(670, 9);
+            buttonAlert.Name = "buttonAlert";
+            buttonAlert.Size = new Size(41, 29);
+            buttonAlert.TabIndex = 2;
+            buttonAlert.UseVisualStyleBackColor = true;
+            // 
+            // buttonNewChat
+            // 
+            buttonNewChat.BackColor = Color.FromArgb(224, 224, 224);
+            buttonNewChat.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonNewChat.ForeColor = SystemColors.ActiveCaptionText;
+            buttonNewChat.Location = new Point(560, 9);
+            buttonNewChat.Name = "buttonNewChat";
+            buttonNewChat.Size = new Size(104, 29);
+            buttonNewChat.TabIndex = 1;
+            buttonNewChat.Text = "+ New Chat";
+            buttonNewChat.UseVisualStyleBackColor = false;
+            // 
+            // labelChatTitle
+            // 
+            labelChatTitle.Font = new Font("Impact", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelChatTitle.Location = new Point(0, 0);
+            labelChatTitle.Name = "labelChatTitle";
+            labelChatTitle.Size = new Size(113, 48);
+            labelChatTitle.TabIndex = 0;
+            labelChatTitle.Text = "Chat";
+            labelChatTitle.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -502,65 +502,65 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1119, 632);
-            Controls.Add(panel1);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(panel);
+            Controls.Add(groupBoxChat);
+            Controls.Add(groupBoxMenu);
+            Controls.Add(groupBoxInbox);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             Primary.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBoxInbox.ResumeLayout(false);
+            groupBoxMenu.ResumeLayout(false);
+            groupBoxMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).EndInit();
+            groupBoxChat.ResumeLayout(false);
+            groupBoxChat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarCenter).EndInit();
+            panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private Panel panel1;
-        private Label label1;
-        private Button button1;
-        private Button button2;
-        private Label label2;
-        private PictureBox pictureBox1;
-        private Label label3;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Label label4;
-        private PictureBox pictureBox2;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Button button11;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Label label11;
-        private PictureBox pictureBox3;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
-        private Label label12;
-        private Button button12;
-        private Button button15;
-        private Button button14;
-        private Button button13;
-        private TextBox textBox1;
+        private GroupBox groupBoxInbox;
+        private GroupBox groupBoxMenu;
+        private GroupBox groupBoxChat;
+        private Panel panel;
+        private Label labelChatTitle;
+        private Button buttonNewChat;
+        private Button buttonAlert;
+        private Label labelUserNameRight;
+        private PictureBox pictureBoxAvatarRight;
+        private Label labelInbox;
+        private Button buttonChatEnd;
+        private Button buttonVoiceChat;
+        private Button buttonVideoChat;
+        private Label labelUserNameCenter;
+        private PictureBox pictureBoxAvatarCenter;
+        private Label labelSetting;
+        private Label labelPrivacy;
+        private Label labelContact;
+        private Label labelColls;
+        private Label labelChat;
+        private Label labelExsplore;
+        private Button buttonContact;
+        private Button buttonPrivacy;
+        private Button buttonSetting;
+        private Button buttonColls;
+        private Button buttonChat;
+        private Button buttonExplore;
+        private Label labelUserUameLeft;
+        private PictureBox pictureBoxAvatarLeft;
+        private TabPage tabPagePrimary;
+        private TabPage tabPageGroups;
+        private TabPage tabPageArchive;
+        private Label labelLogOut;
+        private Button buttonLogOut;
+        private Button buttonSend;
+        private Button buttonSendVoice;
+        private Button buttonSendImage;
+        private TextBox textBoxMessage;
     }
 }
