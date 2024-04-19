@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Client.Models
+namespace BLL.Models
 {
     public class MessageModel
     {

@@ -1,7 +1,6 @@
-using Client.Models;
+using BLL.Models;
 using Client.NetworkClasses;
 using Newtonsoft.Json;
-using System.IO;
 using System.Net.Sockets;
 using System.Text;
 
@@ -20,16 +19,17 @@ namespace Client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //SignIn signIn = new SignIn();
-            //this.Hide();
-            //signIn.ShowDialog();
-
-            //if (signIn.result == DialogResult.Abort)
-            //    this.Close();
-            //else
-            //    this.Visible = true;
-
             //ConnectToServer();
+
+            SignIn signIn = new SignIn(networkClient);
+            this.Hide();
+            signIn.ShowDialog();
+
+            if (signIn.result == DialogResult.Abort)
+                this.Close();
+            else
+                this.Visible = true;
+
         }
 
         private void ConnectToServer()
