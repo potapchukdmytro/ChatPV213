@@ -1,4 +1,7 @@
+using Client.Models;
 using Client.NetworkClasses;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Client
 {
@@ -32,6 +35,22 @@ namespace Client
             if (networkClient.Connect())
             {
 
+            }
+        }
+
+        private async Task SendUserProfileToServer(UserModel userProfile)
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    string json = JsonConvert.SerializeObject(userProfile);
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
