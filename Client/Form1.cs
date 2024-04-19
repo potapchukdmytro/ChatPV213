@@ -1,6 +1,8 @@
 using Client.Models;
 using Client.NetworkClasses;
 using Newtonsoft.Json;
+using System.IO;
+using System.Net.Sockets;
 using System.Text;
 
 namespace Client
@@ -42,11 +44,15 @@ namespace Client
         {
             try
             {
-                using (HttpClient client = new HttpClient())
-                {
-                    string json = JsonConvert.SerializeObject(userProfile);
-                    
-                }
+                TcpClient client = new TcpClient();
+
+                string json = JsonConvert.SerializeObject(userProfile);
+
+                byte[] data = Encoding.UTF8.GetBytes(json);
+
+                var stream = client.GetStream();
+
+                await stream.WriteAsync(data, 0, data.Length);
             }
             catch (Exception ex)
             {
