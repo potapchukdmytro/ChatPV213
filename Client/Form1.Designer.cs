@@ -524,6 +524,7 @@
 
         #endregion
 
+        private TabControl Primary;
         private GroupBox groupBoxInbox;
         private GroupBox groupBoxMenu;
         private GroupBox groupBoxChat;
