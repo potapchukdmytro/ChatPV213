@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            TabControl Primary;
+            
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPagePrimary = new TabPage();
             tabPageGroups = new TabPage();
