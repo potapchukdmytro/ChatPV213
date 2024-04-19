@@ -1,7 +1,10 @@
-﻿using Server.ServerClasses;
+﻿using BLL.Models;
+using BLL.Network;
+using Server.ServerClasses;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 
 public class ServerClass
 {
@@ -51,20 +54,55 @@ public class ServerClass
 
     private void AcceptClientCallback(TcpClient client)
     {
-        if(client == null)
+        try
         {
-            return;
+            if (client == null)
+            {
+                return;
+            }
+
+            Console.WriteLine($"Connected {client.Client.RemoteEndPoint}");
+
+            byte[] buffer = new byte[8192];
+
+            NetworkStream stream = client.GetStream();
+
+            while (client.Connected)
+            {
+                int len = stream.Read(buffer);
+
+                string json = Encoding.Default.GetString(buffer, 0, len);
+
+                var request = JsonSerializer.Deserialize<RequestModel>(json);
+
+                if(request.Method == Methods.SignIn)
+                {
+                    // userService.SignIn(SignInModel);
+                    Console.WriteLine(request.Data);
+                    SendResponse(client, true, "ok");
+                }
+            }
         }
-        
-        byte[] buffer = new byte[2048];
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
 
-        NetworkStream stream = client.GetStream();
+    private void SendResponse(TcpClient client, bool isSuccess, string message)
+    {
+        ResponseModel response = new ResponseModel
+        {
+            IsSucces = isSuccess,
+            Message = message
+        };
 
-        int len = stream.Read(buffer);
+        var json = JsonSerializer.Serialize(response);
 
-        string json = Encoding.Default.GetString(buffer, 0, len);
+        byte[] bytes = Encoding.Default.GetBytes(json);
 
-        Console.WriteLine(json);
+        var stream = client.GetStream();
+        stream.Write(bytes);
     }
 
     public void Stop()

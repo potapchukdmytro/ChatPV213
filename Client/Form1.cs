@@ -1,4 +1,8 @@
+using BLL.Models;
 using Client.NetworkClasses;
+using Newtonsoft.Json;
+using System.Net.Sockets;
+using System.Text;
 
 namespace Client
 {
@@ -15,7 +19,9 @@ namespace Client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SignIn signIn = new SignIn();
+            ConnectToServer();
+
+            SignIn signIn = new SignIn(networkClient);
             this.Hide();
             signIn.ShowDialog();
 
@@ -24,7 +30,6 @@ namespace Client
             else
                 this.Visible = true;
 
-            ConnectToServer();
         }
 
         private void ConnectToServer()
