@@ -19,7 +19,7 @@ namespace Client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ConnectToServer();
+            //ConnectToServer();
 
             SignIn signIn = new SignIn(networkClient);
             this.Hide();
