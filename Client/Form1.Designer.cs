@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            
+            TabControl Primary;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPagePrimary = new TabPage();
             tabPageGroups = new TabPage();
@@ -69,8 +69,8 @@
             buttonNewChat = new Button();
             labelChatTitle = new Label();
             Primary = new TabControl();
-            Primary.SuspendLayout();
             groupBoxInbox.SuspendLayout();
+            Primary.SuspendLayout();
             groupBoxMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).BeginInit();
             groupBoxChat.SuspendLayout();
@@ -78,18 +78,6 @@
             panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).BeginInit();
             SuspendLayout();
-            // 
-            // Primary
-            // 
-            Primary.Controls.Add(tabPagePrimary);
-            Primary.Controls.Add(tabPageGroups);
-            Primary.Controls.Add(tabPageArchive);
-            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            Primary.Location = new Point(17, 38);
-            Primary.Name = "Primary";
-            Primary.SelectedIndex = 0;
-            Primary.Size = new Size(268, 481);
-            Primary.TabIndex = 1;
             // 
             // tabPagePrimary
             // 
@@ -134,6 +122,18 @@
             groupBoxInbox.Size = new Size(301, 530);
             groupBoxInbox.TabIndex = 0;
             groupBoxInbox.TabStop = false;
+            // 
+            // Primary
+            // 
+            Primary.Controls.Add(tabPagePrimary);
+            Primary.Controls.Add(tabPageGroups);
+            Primary.Controls.Add(tabPageArchive);
+            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Primary.Location = new Point(17, 38);
+            Primary.Name = "Primary";
+            Primary.SelectedIndex = 0;
+            Primary.Size = new Size(268, 481);
+            Primary.TabIndex = 1;
             // 
             // labelInbox
             // 
@@ -188,6 +188,7 @@
             buttonLogOut.Size = new Size(40, 37);
             buttonLogOut.TabIndex = 22;
             buttonLogOut.UseVisualStyleBackColor = true;
+            buttonLogOut.Click += buttonLogOut_Click;
             // 
             // labelUserUameLeft
             // 
@@ -276,6 +277,7 @@
             buttonContact.Size = new Size(40, 37);
             buttonContact.TabIndex = 15;
             buttonContact.UseVisualStyleBackColor = true;
+            buttonContact.Click += buttonContact_Click;
             // 
             // buttonPrivacy
             // 
@@ -286,6 +288,7 @@
             buttonPrivacy.Size = new Size(40, 37);
             buttonPrivacy.TabIndex = 14;
             buttonPrivacy.UseVisualStyleBackColor = true;
+            buttonPrivacy.Click += buttonPrivacy_Click;
             // 
             // buttonSetting
             // 
@@ -296,6 +299,7 @@
             buttonSetting.Size = new Size(40, 37);
             buttonSetting.TabIndex = 13;
             buttonSetting.UseVisualStyleBackColor = true;
+            buttonSetting.Click += buttonSetting_Click;
             // 
             // buttonColls
             // 
@@ -306,6 +310,7 @@
             buttonColls.Size = new Size(40, 37);
             buttonColls.TabIndex = 12;
             buttonColls.UseVisualStyleBackColor = true;
+            buttonColls.Click += buttonColls_Click;
             // 
             // buttonChat
             // 
@@ -317,6 +322,7 @@
             buttonChat.Size = new Size(40, 37);
             buttonChat.TabIndex = 11;
             buttonChat.UseVisualStyleBackColor = false;
+            buttonChat.Click += buttonChat_Click;
             // 
             // buttonExplore
             // 
@@ -327,6 +333,7 @@
             buttonExplore.Size = new Size(40, 37);
             buttonExplore.TabIndex = 10;
             buttonExplore.UseVisualStyleBackColor = true;
+            buttonExplore.Click += buttonExplore_Click;
             // 
             // groupBoxChat
             // 
@@ -354,6 +361,7 @@
             textBoxMessage.Name = "textBoxMessage";
             textBoxMessage.Size = new Size(329, 27);
             textBoxMessage.TabIndex = 27;
+            textBoxMessage.TextChanged += textBoxMessage_TextChanged;
             // 
             // buttonSend
             // 
@@ -364,6 +372,7 @@
             buttonSend.Size = new Size(40, 37);
             buttonSend.TabIndex = 26;
             buttonSend.UseVisualStyleBackColor = true;
+            buttonSend.Click += buttonSend_Click;
             // 
             // buttonSendVoice
             // 
@@ -374,6 +383,7 @@
             buttonSendVoice.Size = new Size(40, 37);
             buttonSendVoice.TabIndex = 25;
             buttonSendVoice.UseVisualStyleBackColor = true;
+            buttonSendVoice.Click += buttonSendVoice_Click;
             // 
             // buttonSendImage
             // 
@@ -384,6 +394,7 @@
             buttonSendImage.Size = new Size(40, 37);
             buttonSendImage.TabIndex = 24;
             buttonSendImage.UseVisualStyleBackColor = true;
+            buttonSendImage.Click += buttonSendImage_Click;
             // 
             // buttonChatEnd
             // 
@@ -473,6 +484,7 @@
             buttonAlert.Size = new Size(41, 29);
             buttonAlert.TabIndex = 2;
             buttonAlert.UseVisualStyleBackColor = true;
+            buttonAlert.Click += buttonAlert_Click;
             // 
             // buttonNewChat
             // 
@@ -509,8 +521,8 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            Primary.ResumeLayout(false);
             groupBoxInbox.ResumeLayout(false);
+            Primary.ResumeLayout(false);
             groupBoxMenu.ResumeLayout(false);
             groupBoxMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).EndInit();
