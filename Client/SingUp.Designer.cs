@@ -43,7 +43,7 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelNameValidation = new System.Windows.Forms.Label();
             this.labelSurnameValidation = new System.Windows.Forms.Label();
-            this.labelUserameValidation = new System.Windows.Forms.Label();
+            this.labelUsernameValidation = new System.Windows.Forms.Label();
             this.labelEmailValidation = new System.Windows.Forms.Label();
             this.labelPasswordValidation = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -185,7 +185,7 @@
             // 
             this.labelNameValidation.AutoSize = true;
             this.labelNameValidation.ForeColor = System.Drawing.Color.Red;
-            this.labelNameValidation.Location = new System.Drawing.Point(131, 114);
+            this.labelNameValidation.Location = new System.Drawing.Point(119, 114);
             this.labelNameValidation.Name = "labelNameValidation";
             this.labelNameValidation.Size = new System.Drawing.Size(62, 15);
             this.labelNameValidation.TabIndex = 13;
@@ -196,29 +196,29 @@
             // 
             this.labelSurnameValidation.AutoSize = true;
             this.labelSurnameValidation.ForeColor = System.Drawing.Color.Red;
-            this.labelSurnameValidation.Location = new System.Drawing.Point(131, 157);
+            this.labelSurnameValidation.Location = new System.Drawing.Point(119, 157);
             this.labelSurnameValidation.Name = "labelSurnameValidation";
             this.labelSurnameValidation.Size = new System.Drawing.Size(78, 15);
             this.labelSurnameValidation.TabIndex = 14;
             this.labelSurnameValidation.Text = "surnameError";
             this.labelSurnameValidation.Visible = false;
             // 
-            // labelUserameValidation
+            // labelUsernameValidation
             // 
-            this.labelUserameValidation.AutoSize = true;
-            this.labelUserameValidation.ForeColor = System.Drawing.Color.Red;
-            this.labelUserameValidation.Location = new System.Drawing.Point(131, 200);
-            this.labelUserameValidation.Name = "labelUserameValidation";
-            this.labelUserameValidation.Size = new System.Drawing.Size(84, 15);
-            this.labelUserameValidation.TabIndex = 15;
-            this.labelUserameValidation.Text = "usernameError";
-            this.labelUserameValidation.Visible = false;
+            this.labelUsernameValidation.AutoSize = true;
+            this.labelUsernameValidation.ForeColor = System.Drawing.Color.Red;
+            this.labelUsernameValidation.Location = new System.Drawing.Point(119, 200);
+            this.labelUsernameValidation.Name = "labelUsernameValidation";
+            this.labelUsernameValidation.Size = new System.Drawing.Size(84, 15);
+            this.labelUsernameValidation.TabIndex = 15;
+            this.labelUsernameValidation.Text = "usernameError";
+            this.labelUsernameValidation.Visible = false;
             // 
             // labelEmailValidation
             // 
             this.labelEmailValidation.AutoSize = true;
             this.labelEmailValidation.ForeColor = System.Drawing.Color.Red;
-            this.labelEmailValidation.Location = new System.Drawing.Point(131, 243);
+            this.labelEmailValidation.Location = new System.Drawing.Point(119, 243);
             this.labelEmailValidation.Name = "labelEmailValidation";
             this.labelEmailValidation.Size = new System.Drawing.Size(61, 15);
             this.labelEmailValidation.TabIndex = 16;
@@ -229,7 +229,7 @@
             // 
             this.labelPasswordValidation.AutoSize = true;
             this.labelPasswordValidation.ForeColor = System.Drawing.Color.Red;
-            this.labelPasswordValidation.Location = new System.Drawing.Point(131, 286);
+            this.labelPasswordValidation.Location = new System.Drawing.Point(119, 286);
             this.labelPasswordValidation.Name = "labelPasswordValidation";
             this.labelPasswordValidation.Size = new System.Drawing.Size(82, 15);
             this.labelPasswordValidation.TabIndex = 17;
@@ -255,7 +255,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelPasswordValidation);
             this.Controls.Add(this.labelEmailValidation);
-            this.Controls.Add(this.labelUserameValidation);
+            this.Controls.Add(this.labelUsernameValidation);
             this.Controls.Add(this.labelSurnameValidation);
             this.Controls.Add(this.labelNameValidation);
             this.Controls.Add(this.labelPassword);
@@ -295,7 +295,7 @@
         private Label labelPassword;
         private Label labelNameValidation;
         private Label labelSurnameValidation;
-        private Label labelUserameValidation;
+        private Label labelUsernameValidation;
         private Label labelEmailValidation;
         private Label labelPasswordValidation;
         private Label label2;

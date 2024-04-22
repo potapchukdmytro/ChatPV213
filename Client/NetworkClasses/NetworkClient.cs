@@ -1,8 +1,11 @@
 ﻿using System;
 using System.IO;
+﻿using BLL.Models;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
+using System.Windows.Forms;
 
 namespace Client.NetworkClasses
 {
@@ -78,6 +81,40 @@ namespace Client.NetworkClasses
             {
                 Console.WriteLine("Error sending voice message: " + ex.Message);
             }
+        }
+
+        public ResponseModel SendRequest(string method, string data)
+        {
+            if (!isConnected)
+            {
+                return new ResponseModel
+                {
+                    IsSucces = false,
+                    Message = "Disconnected"
+                };
+            }
+
+            RequestModel model = new RequestModel
+            {
+                Data = data,
+                Method = method,
+            };
+
+            var json = JsonSerializer.Serialize(model);
+
+            var stream = tcpClient.GetStream();
+
+            stream.Write(Encoding.Default.GetBytes(json));
+
+            byte[] buffer = new byte[8192];
+
+            int len = stream.Read(buffer);
+
+            string response = Encoding.Default.GetString(buffer, 0, len);
+
+            var responseModel = JsonSerializer.Deserialize<ResponseModel>(response);
+
+            return responseModel;
         }
     }
 }
