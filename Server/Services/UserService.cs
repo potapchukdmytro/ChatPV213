@@ -8,16 +8,19 @@ using BLL.Models;
 using Server.Entities;
 using Server.Repositories;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace Server.Services
 {
     public class UserService
     {
         private readonly UserRepository _userRepository;
+        private readonly Mapper _mapper;
 
-        public UserService(UserRepository userRepository)
+        public UserService(UserRepository userRepository, Mapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
         public async Task<ServiceResponse> CreateUserAsync(UserEntity user)
@@ -123,10 +126,8 @@ namespace Server.Services
             return response;
         }
 
-        public async Task<UserModel> SignInAsync(LogInModel signInModel)
+        public async Task<UserModel?> SignInAsync(LogInModel signInModel)
         {
-            var response = new ServiceResponse();
-
             try
             {
                 var user = await _userRepository.Users.FirstOrDefaultAsync(u =>
@@ -134,29 +135,26 @@ namespace Server.Services
 
                 if (user == null)
                 {
-                    response.IsSuccess = false;
-                    response.Message = "Невірний username або email.";
                     return null;
                 }
 
                 if (user.Password != signInModel.Password)
                 {
-                    response.IsSuccess = false;
-                    response.Message = "Невірний пароль.";
                     return null;
                 }
 
-                response.IsSuccess = true;
-                var getUser = await GetUserByIdAsync(user.Id);
+                var entity = await GetUserByIdAsync(user.Id);
+
+                var userModel = _mapper.Map<UserModel>(entity);
+
+                return userModel;
 
             }
             catch (Exception ex)
             {
-                response.IsSuccess = false;
-                response.Message = ex.Message;
+                Console.WriteLine(ex.Message);
+                return null;
             }
-
-            return null;
         }
     }
 }

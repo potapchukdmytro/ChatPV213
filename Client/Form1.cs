@@ -10,6 +10,7 @@ namespace Client
     public partial class Form1 : Form
     {
         private NetworkClient networkClient;
+        private UserModel currentUser;
 
         public Form1()
         {
@@ -20,8 +21,8 @@ namespace Client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //ConnectToServer();
-            /*
+            ConnectToServer();
+
             SignIn signIn = new SignIn(networkClient);
             this.Hide();
             signIn.ShowDialog();
@@ -29,8 +30,12 @@ namespace Client
             if (signIn.result == DialogResult.Abort)
                 this.Close();
             else
+            {
+                currentUser = signIn.currentUser;
                 this.Visible = true;
-            */
+                labelUserNameRight.Text = currentUser.Name;
+            }
+
         }
 
         private void ConnectToServer()

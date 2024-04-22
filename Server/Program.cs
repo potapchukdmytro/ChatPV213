@@ -10,7 +10,9 @@ namespace Server
     {
         static async Task Main(string[] args)
         {
-            ServerClass server = new ServerClass("127.0.0.1", 1024);
+            Config config = new Config();
+            
+            ServerClass server = new ServerClass("127.0.0.1", 1024, config.UserService);
             await server.StartAsync();
 
             while(server.IsRunning)

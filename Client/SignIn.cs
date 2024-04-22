@@ -11,12 +11,14 @@ namespace Client
         private NetworkClient networkClient;
 
         public DialogResult result;
+        public UserModel? currentUser;
         public SignIn(NetworkClient networkClient)
         {
             InitializeComponent();
             result = DialogResult.Abort;
             StartPosition = FormStartPosition.CenterParent;
             this.networkClient = networkClient;
+            currentUser = null;
         }
 
         private bool Validation(LogInModel model)
@@ -65,12 +67,14 @@ namespace Client
 
             if(response.IsSucces)
             {
+                var userModel = JsonSerializer.Deserialize<UserModel>(response.Message);
                 result = DialogResult.OK;
+                currentUser = userModel;
                 Close();
             }
             else
             {
-
+                MessageBox.Show(response.Message);
             }
         }
 

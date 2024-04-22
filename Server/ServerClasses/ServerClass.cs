@@ -1,6 +1,7 @@
 ﻿using BLL.Models;
 using BLL.Network;
 using Server.ServerClasses;
+using Server.Services;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -14,14 +15,16 @@ public class ServerClass
     public bool IsRunning { get; set; }
 
     private TcpListener? listener;
+    private readonly UserService userService;
 
-    public ServerClass(string iPAddress, int port)
+    public ServerClass(string iPAddress, int port, UserService userService)
     {
         Port = port;
         IPAddress = IPAddress.Parse(iPAddress);
         listener = new TcpListener(IPAddress, Port);
         Clients = new List<ClientModel>();
         IsRunning = false;
+        this.userService = userService;
     }
 
     public Task StartAsync()
@@ -77,9 +80,18 @@ public class ServerClass
 
                 if(request.Method == Methods.SignIn)
                 {
-                    // userService.SignIn(SignInModel);
-                    Console.WriteLine(request.Data);
-                    SendResponse(client, true, "ok");
+                    var model = JsonSerializer.Deserialize<LogInModel>(request.Data);
+
+                    var userModel = userService.SignInAsync(model).Result;
+
+                    if(userModel == null)
+                    {
+                        SendResponse(client, false, "incorrect login or password");
+                    }
+                    else
+                    {
+                        SendResponse(client, true, JsonSerializer.Serialize(userModel));
+                    }
                 }
             }
         }
