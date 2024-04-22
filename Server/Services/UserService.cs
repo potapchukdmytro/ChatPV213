@@ -122,5 +122,41 @@ namespace Server.Services
 
             return response;
         }
+
+        public async Task<UserModel> SignInAsync(LogInModel signInModel)
+        {
+            var response = new ServiceResponse();
+
+            try
+            {
+                var user = await _userRepository.Users.FirstOrDefaultAsync(u =>
+                    u.UserName == signInModel.Login || u.Email == signInModel.Login);
+
+                if (user == null)
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Невірний username або email.";
+                    return null;
+                }
+
+                if (user.Password != signInModel.Password)
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Невірний пароль.";
+                    return null;
+                }
+
+                response.IsSuccess = true;
+                var getUser = await GetUserByIdAsync(user.Id);
+
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+            }
+
+            return null;
+        }
     }
 }
