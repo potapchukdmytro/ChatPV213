@@ -3,5 +3,6 @@
     public static class Methods
     {
         public static string SignIn = "signin";
+        public static string SendMessage = "sendmessage";
     }
 }

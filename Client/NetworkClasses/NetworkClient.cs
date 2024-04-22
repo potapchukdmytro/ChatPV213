@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using System.Windows.Forms;
+using BLL.Network;
 
 namespace Client.NetworkClasses
 {
@@ -39,7 +40,7 @@ namespace Client.NetworkClasses
         {
             if (!isConnected)
             {
-                Console.WriteLine("Not connected to server.");
+                MessageBox.Show("Not connected to server.");
                 return;
             }
 
