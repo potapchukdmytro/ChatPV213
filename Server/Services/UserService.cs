@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Client;
+using Client.Models;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Azure;
+using BLL.Models;
 using Server.Entities;
 using Server.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Server.Services
 {
@@ -66,6 +70,56 @@ namespace Server.Services
                 response.IsSuccess = false;
                 response.Message = ex.Message;
             }
+            return response;
+        }
+
+        public async Task<bool> IsUserNameUniqueAsync(string userName)
+        {
+            return await _userRepository.Users.AnyAsync(u => u.UserName == userName);
+        }
+
+        public async Task<bool> IsEmailUniqueAsync(string email)
+        {
+            return await _userRepository.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<ServiceResponse> SignUpAsync(SignUpModel signUpModel)
+        {
+            var response = new ServiceResponse();
+
+            try
+            {
+                if (!await IsUserNameUniqueAsync(signUpModel.Username))
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Користувач з таким username вже існує.";
+                    return response;
+                }
+
+                if (!await IsEmailUniqueAsync(signUpModel.Email))
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Користувач з таким email вже існує.";
+                    return response;
+                }
+
+                var newUser = new UserEntity
+                {
+                    FirstName = signUpModel.Name,
+                    LastName = signUpModel.Lastname,
+                    UserName = signUpModel.Username,
+                    Email = signUpModel.Email,
+                    Password = signUpModel.Password
+                };
+
+                var createUserResponse = await CreateUserAsync(newUser);
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message;
+            }
+
             return response;
         }
     }
