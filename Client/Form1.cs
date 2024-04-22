@@ -1,6 +1,7 @@
 using BLL.Models;
+using BLL.Network;
 using Client.NetworkClasses;
-using Newtonsoft.Json;
+using System.Text.Json;
 using System.Net.Sockets;
 using System.Text;
 
@@ -20,7 +21,7 @@ namespace Client
         private void Form1_Load(object sender, EventArgs e)
         {
             //ConnectToServer();
-
+            /*
             SignIn signIn = new SignIn(networkClient);
             this.Hide();
             signIn.ShowDialog();
@@ -29,7 +30,7 @@ namespace Client
                 this.Close();
             else
                 this.Visible = true;
-
+            */
         }
 
         private void ConnectToServer()
@@ -52,7 +53,24 @@ namespace Client
             string message = textBoxMessage.Text.Trim();
             if (!string.IsNullOrEmpty(message))
             {
-                // send message
+                SendMessageModel messageModel= new SendMessageModel()
+                {
+                    Text = message,
+                    UserId = 0,
+                    ChatId = 0
+                };
+
+                var json = JsonSerializer.Serialize<SendMessageModel>(messageModel);
+                var response = networkClient.SendRequest(Methods.SendMessage, json);
+
+                if (response.IsSucces)
+                {
+                    textBoxMessage.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show(response.Message);
+                }
             }
             else
             {
@@ -138,7 +156,7 @@ namespace Client
             {
                 TcpClient client = new TcpClient();
 
-                string json = JsonConvert.SerializeObject(userProfile);
+                string json = JsonSerializer.Serialize(userProfile);
 
                 byte[] data = Encoding.UTF8.GetBytes(json);
 
