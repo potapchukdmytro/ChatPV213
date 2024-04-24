@@ -23,7 +23,7 @@ namespace Client
         {
             ConnectToServer();
 
-            SignIn signIn = new SignIn(networkClient);
+            /*SignIn signIn = new SignIn(networkClient);
             this.Hide();
             signIn.ShowDialog();
 
@@ -33,9 +33,10 @@ namespace Client
             {
                 currentUser = signIn.currentUser;
                 this.Visible = true;
-                labelUserNameRight.Text = currentUser.Name;
+                labelUserNameRight.Text = currentUser.Name;*/
                 UpdateMessageList();
-            }
+                UpdateGroupList();
+            //}
         }
 
         private void ConnectToServer()
@@ -164,6 +165,18 @@ namespace Client
                 var messages = JsonSerializer.Deserialize<MessageModel[]>(response.Message);
 
                 listBoxMessages.Items.AddRange(messages);
+            }
+        }
+
+        private void UpdateGroupList()
+        {
+            var response = networkClient.SendRequest(Methods.GetGroups, currentUser.Id.ToString());
+
+            if (response.IsSucces)
+            {
+                var groups = JsonSerializer.Deserialize<GroupModel[]>(response.Message);
+
+                listBoxGroups.Items.AddRange(groups);
             }
         }
 
