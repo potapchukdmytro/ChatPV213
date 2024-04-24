@@ -11,6 +11,7 @@ namespace Server
         public ChatRepository ChatRepository { get; init; }
         public MessageRepository MessageRepository { get; init; }
         public UserService UserService { get; init; }
+        public MessageService MessageService { get; init; }
         public Mapper Mapper { get; init; }
 
         public Config()
@@ -30,6 +31,7 @@ namespace Server
             Mapper = new Mapper(configuration);
 
             UserService = new UserService(UserRepository, Mapper);
+            MessageService = new MessageService(MessageRepository, UserService);
         }
     }
 }

@@ -34,8 +34,8 @@ namespace Client
                 currentUser = signIn.currentUser;
                 this.Visible = true;
                 labelUserNameRight.Text = currentUser.Name;
+                UpdateMessageList();
             }
-
         }
 
         private void ConnectToServer()
@@ -61,11 +61,11 @@ namespace Client
                 SendMessageModel messageModel= new SendMessageModel()
                 {
                     Text = message,
-                    UserId = 0,
-                    ChatId = 0
+                    UserId = currentUser.Id,
+                    ChatId = 2
                 };
 
-                var json = JsonSerializer.Serialize<SendMessageModel>(messageModel);
+                var json = JsonSerializer.Serialize(messageModel);
                 var response = networkClient.SendRequest(Methods.SendMessage, json);
 
                 if (response.IsSucces)
@@ -153,6 +153,18 @@ namespace Client
         private void buttonAlert_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Alert triggered.");
+        }
+
+        private void UpdateMessageList()
+        {
+            var response = networkClient.SendRequest(Methods.GetMessages, currentUser.Id.ToString());
+
+            if(response.IsSucces)
+            {
+                var messages = JsonSerializer.Deserialize<MessageModel[]>(response.Message);
+
+                listBoxMessages.Items.AddRange(messages);
+            }
         }
 
         private async Task SendUserProfileToServer(UserModel userProfile)

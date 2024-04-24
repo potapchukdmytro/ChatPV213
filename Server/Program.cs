@@ -12,7 +12,7 @@ namespace Server
         {
             Config config = new Config();
             
-            ServerClass server = new ServerClass("127.0.0.1", 1024, config.UserService);
+            ServerClass server = new ServerClass("127.0.0.1", 1024, config.UserService, config.MessageService);
             await server.StartAsync();
 
             while(server.IsRunning)

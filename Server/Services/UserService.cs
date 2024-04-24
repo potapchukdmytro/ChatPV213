@@ -41,7 +41,7 @@ namespace Server.Services
 
         public async Task<UserEntity?> GetUserByIdAsync(int userId)
         {
-            return await _userRepository.GetByIdAsync(userId);
+            return _userRepository.Users.FirstOrDefault(u => u.Id == userId);
         }
 
         public async Task<ServiceResponse> UpdateUserAsync(UserEntity user)

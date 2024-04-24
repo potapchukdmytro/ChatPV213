@@ -16,8 +16,9 @@ public class ServerClass
 
     private TcpListener? listener;
     private readonly UserService userService;
+    private readonly MessageService messageService;
 
-    public ServerClass(string iPAddress, int port, UserService userService)
+    public ServerClass(string iPAddress, int port, UserService userService, MessageService messageService)
     {
         Port = port;
         IPAddress = IPAddress.Parse(iPAddress);
@@ -25,6 +26,7 @@ public class ServerClass
         Clients = new List<ClientModel>();
         IsRunning = false;
         this.userService = userService;
+        this.messageService = messageService;
     }
 
     public Task StartAsync()
@@ -55,7 +57,7 @@ public class ServerClass
         });
     }
 
-    private void AcceptClientCallback(TcpClient client)
+    private async void AcceptClientCallback(TcpClient client)
     {
         try
         {
@@ -92,6 +94,23 @@ public class ServerClass
                     {
                         SendResponse(client, true, JsonSerializer.Serialize(userModel));
                     }
+                }
+                else if(request.Method == Methods.SendMessage)
+                {
+                    var model = JsonSerializer.Deserialize<SendMessageModel>(request.Data);
+
+                    var response = await messageService.CreateMessageAsync(model);
+
+                    SendResponse(client, response.IsSuccess, response.Message);
+
+                }
+                else if(request.Method == Methods.GetMessages)
+                {
+                    int userId = int.Parse(request.Data);
+                    var res = await messageService.GetMessagesByUserAsync(userId);
+
+                    string data = JsonSerializer.Serialize(res.ToArray());
+                    SendResponse(client, true, data);
                 }
             }
         }

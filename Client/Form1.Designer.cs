@@ -68,9 +68,10 @@
             buttonAlert = new Button();
             buttonNewChat = new Button();
             labelChatTitle = new Label();
+            listBoxMessages = new ListBox();
             Primary = new TabControl();
-            groupBoxInbox.SuspendLayout();
             Primary.SuspendLayout();
+            groupBoxInbox.SuspendLayout();
             groupBoxMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).BeginInit();
             groupBoxChat.SuspendLayout();
@@ -78,6 +79,18 @@
             panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).BeginInit();
             SuspendLayout();
+            // 
+            // Primary
+            // 
+            Primary.Controls.Add(tabPagePrimary);
+            Primary.Controls.Add(tabPageGroups);
+            Primary.Controls.Add(tabPageArchive);
+            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Primary.Location = new Point(17, 38);
+            Primary.Name = "Primary";
+            Primary.SelectedIndex = 0;
+            Primary.Size = new Size(268, 481);
+            Primary.TabIndex = 1;
             // 
             // tabPagePrimary
             // 
@@ -122,18 +135,6 @@
             groupBoxInbox.Size = new Size(301, 530);
             groupBoxInbox.TabIndex = 0;
             groupBoxInbox.TabStop = false;
-            // 
-            // Primary
-            // 
-            Primary.Controls.Add(tabPagePrimary);
-            Primary.Controls.Add(tabPageGroups);
-            Primary.Controls.Add(tabPageArchive);
-            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            Primary.Location = new Point(17, 38);
-            Primary.Name = "Primary";
-            Primary.SelectedIndex = 0;
-            Primary.Size = new Size(268, 481);
-            Primary.TabIndex = 1;
             // 
             // labelInbox
             // 
@@ -338,6 +339,7 @@
             // groupBoxChat
             // 
             groupBoxChat.BackColor = Color.Gray;
+            groupBoxChat.Controls.Add(listBoxMessages);
             groupBoxChat.Controls.Add(textBoxMessage);
             groupBoxChat.Controls.Add(buttonSend);
             groupBoxChat.Controls.Add(buttonSendVoice);
@@ -508,6 +510,16 @@
             labelChatTitle.Text = "Chat";
             labelChatTitle.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // listBoxMessages
+            // 
+            listBoxMessages.BackColor = Color.Gray;
+            listBoxMessages.FormattingEnabled = true;
+            listBoxMessages.ItemHeight = 20;
+            listBoxMessages.Location = new Point(16, 55);
+            listBoxMessages.Name = "listBoxMessages";
+            listBoxMessages.Size = new Size(509, 424);
+            listBoxMessages.TabIndex = 28;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -521,8 +533,8 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            groupBoxInbox.ResumeLayout(false);
             Primary.ResumeLayout(false);
+            groupBoxInbox.ResumeLayout(false);
             groupBoxMenu.ResumeLayout(false);
             groupBoxMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).EndInit();
@@ -575,5 +587,6 @@
         private Button buttonSendVoice;
         private Button buttonSendImage;
         private TextBox textBoxMessage;
+        private ListBox listBoxMessages;
     }
 }
