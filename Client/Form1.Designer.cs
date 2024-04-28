@@ -28,556 +28,569 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TabControl Primary;
+            TabControl Primary;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tabPagePrimary = new System.Windows.Forms.TabPage();
-            this.tabPageGroups = new System.Windows.Forms.TabPage();
-            this.tabPageArchive = new System.Windows.Forms.TabPage();
-            this.groupBoxInbox = new System.Windows.Forms.GroupBox();
-            this.labelInbox = new System.Windows.Forms.Label();
-            this.groupBoxMenu = new System.Windows.Forms.GroupBox();
-            this.labelLogOut = new System.Windows.Forms.Label();
-            this.buttonLogOut = new System.Windows.Forms.Button();
-            this.labelUserUameLeft = new System.Windows.Forms.Label();
-            this.pictureBoxAvatarLeft = new System.Windows.Forms.PictureBox();
-            this.labelSetting = new System.Windows.Forms.Label();
-            this.labelPrivacy = new System.Windows.Forms.Label();
-            this.labelContact = new System.Windows.Forms.Label();
-            this.labelColls = new System.Windows.Forms.Label();
-            this.labelChat = new System.Windows.Forms.Label();
-            this.labelExsplore = new System.Windows.Forms.Label();
-            this.buttonContact = new System.Windows.Forms.Button();
-            this.buttonPrivacy = new System.Windows.Forms.Button();
-            this.buttonSetting = new System.Windows.Forms.Button();
-            this.buttonColls = new System.Windows.Forms.Button();
-            this.buttonChat = new System.Windows.Forms.Button();
-            this.buttonExplore = new System.Windows.Forms.Button();
-            this.groupBoxChat = new System.Windows.Forms.GroupBox();
-            this.listBoxMessages = new System.Windows.Forms.ListBox();
-            this.textBoxMessage = new System.Windows.Forms.TextBox();
-            this.buttonSend = new System.Windows.Forms.Button();
-            this.buttonSendVoice = new System.Windows.Forms.Button();
-            this.buttonSendImage = new System.Windows.Forms.Button();
-            this.buttonChatEnd = new System.Windows.Forms.Button();
-            this.buttonVoiceChat = new System.Windows.Forms.Button();
-            this.buttonVideoChat = new System.Windows.Forms.Button();
-            this.labelUserNameCenter = new System.Windows.Forms.Label();
-            this.pictureBoxAvatarCenter = new System.Windows.Forms.PictureBox();
-            this.panel = new System.Windows.Forms.Panel();
-            this.labelUserNameRight = new System.Windows.Forms.Label();
-            this.pictureBoxAvatarRight = new System.Windows.Forms.PictureBox();
-            this.buttonAlert = new System.Windows.Forms.Button();
-            this.buttonNewChat = new System.Windows.Forms.Button();
-            this.labelChatTitle = new System.Windows.Forms.Label();
-            this.listBoxGroups = new System.Windows.Forms.ListBox();
-            Primary = new System.Windows.Forms.TabControl();
+            tabPagePrimary = new TabPage();
+            listBoxGroups = new ListBox();
+            tabPageGroups = new TabPage();
+            tabPageArchive = new TabPage();
+            groupBoxInbox = new GroupBox();
+            labelInbox = new Label();
+            groupBoxMenu = new GroupBox();
+            labelLogOut = new Label();
+            buttonLogOut = new Button();
+            labelUserUameLeft = new Label();
+            pictureBoxAvatarLeft = new PictureBox();
+            labelSetting = new Label();
+            labelPrivacy = new Label();
+            labelContact = new Label();
+            labelColls = new Label();
+            labelChat = new Label();
+            labelExsplore = new Label();
+            buttonContact = new Button();
+            buttonPrivacy = new Button();
+            buttonSetting = new Button();
+            buttonColls = new Button();
+            buttonChat = new Button();
+            buttonExplore = new Button();
+            groupBoxChat = new GroupBox();
+            listBoxMessages = new ListBox();
+            textBoxMessage = new TextBox();
+            buttonSend = new Button();
+            buttonSendVoice = new Button();
+            buttonSendImage = new Button();
+            buttonChatEnd = new Button();
+            buttonVoiceChat = new Button();
+            buttonVideoChat = new Button();
+            labelUserNameCenter = new Label();
+            pictureBoxAvatarCenter = new PictureBox();
+            panel = new Panel();
+            labelUserNameRight = new Label();
+            pictureBoxAvatarRight = new PictureBox();
+            buttonAlert = new Button();
+            buttonNewChat = new Button();
+            labelChatTitle = new Label();
+            Primary = new TabControl();
             Primary.SuspendLayout();
-            this.tabPagePrimary.SuspendLayout();
-            this.groupBoxInbox.SuspendLayout();
-            this.groupBoxMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarLeft)).BeginInit();
-            this.groupBoxChat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarCenter)).BeginInit();
-            this.panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarRight)).BeginInit();
-            this.SuspendLayout();
+            tabPagePrimary.SuspendLayout();
+            groupBoxInbox.SuspendLayout();
+            groupBoxMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).BeginInit();
+            groupBoxChat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarCenter).BeginInit();
+            panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).BeginInit();
+            SuspendLayout();
             // 
             // Primary
             // 
-            Primary.Controls.Add(this.tabPagePrimary);
-            Primary.Controls.Add(this.tabPageGroups);
-            Primary.Controls.Add(this.tabPageArchive);
-            Primary.Font = new System.Drawing.Font("Impact", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            Primary.Location = new System.Drawing.Point(15, 28);
-            Primary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Primary.Controls.Add(tabPagePrimary);
+            Primary.Controls.Add(tabPageGroups);
+            Primary.Controls.Add(tabPageArchive);
+            Primary.Font = new Font("Impact", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Primary.Location = new Point(28, 60);
+            Primary.Margin = new Padding(6, 4, 6, 4);
             Primary.Name = "Primary";
             Primary.SelectedIndex = 0;
-            Primary.Size = new System.Drawing.Size(234, 361);
+            Primary.Size = new Size(435, 770);
             Primary.TabIndex = 1;
             // 
             // tabPagePrimary
             // 
-            this.tabPagePrimary.BackColor = System.Drawing.Color.Gray;
-            this.tabPagePrimary.Controls.Add(this.listBoxGroups);
-            this.tabPagePrimary.Location = new System.Drawing.Point(4, 23);
-            this.tabPagePrimary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPagePrimary.Name = "tabPagePrimary";
-            this.tabPagePrimary.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPagePrimary.Size = new System.Drawing.Size(226, 334);
-            this.tabPagePrimary.TabIndex = 0;
-            this.tabPagePrimary.Text = "Primary";
-            // 
-            // tabPageGroups
-            // 
-            this.tabPageGroups.BackColor = System.Drawing.Color.Gray;
-            this.tabPageGroups.Location = new System.Drawing.Point(4, 23);
-            this.tabPageGroups.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageGroups.Name = "tabPageGroups";
-            this.tabPageGroups.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageGroups.Size = new System.Drawing.Size(226, 334);
-            this.tabPageGroups.TabIndex = 1;
-            this.tabPageGroups.Text = "Groups";
-            // 
-            // tabPageArchive
-            // 
-            this.tabPageArchive.BackColor = System.Drawing.Color.Gray;
-            this.tabPageArchive.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabPageArchive.Location = new System.Drawing.Point(4, 23);
-            this.tabPageArchive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageArchive.Name = "tabPageArchive";
-            this.tabPageArchive.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageArchive.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPageArchive.Size = new System.Drawing.Size(226, 334);
-            this.tabPageArchive.TabIndex = 2;
-            this.tabPageArchive.Text = "Archive";
-            // 
-            // groupBoxInbox
-            // 
-            this.groupBoxInbox.BackColor = System.Drawing.Color.Gray;
-            this.groupBoxInbox.Controls.Add(Primary);
-            this.groupBoxInbox.Controls.Add(this.labelInbox);
-            this.groupBoxInbox.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxInbox.Location = new System.Drawing.Point(220, 64);
-            this.groupBoxInbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxInbox.Name = "groupBoxInbox";
-            this.groupBoxInbox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxInbox.Size = new System.Drawing.Size(263, 398);
-            this.groupBoxInbox.TabIndex = 0;
-            this.groupBoxInbox.TabStop = false;
-            // 
-            // labelInbox
-            // 
-            this.labelInbox.Location = new System.Drawing.Point(5, 0);
-            this.labelInbox.Name = "labelInbox";
-            this.labelInbox.Size = new System.Drawing.Size(70, 26);
-            this.labelInbox.TabIndex = 0;
-            this.labelInbox.Text = "Inbox";
-            this.labelInbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // groupBoxMenu
-            // 
-            this.groupBoxMenu.BackColor = System.Drawing.Color.Gray;
-            this.groupBoxMenu.Controls.Add(this.labelLogOut);
-            this.groupBoxMenu.Controls.Add(this.buttonLogOut);
-            this.groupBoxMenu.Controls.Add(this.labelUserUameLeft);
-            this.groupBoxMenu.Controls.Add(this.pictureBoxAvatarLeft);
-            this.groupBoxMenu.Controls.Add(this.labelSetting);
-            this.groupBoxMenu.Controls.Add(this.labelPrivacy);
-            this.groupBoxMenu.Controls.Add(this.labelContact);
-            this.groupBoxMenu.Controls.Add(this.labelColls);
-            this.groupBoxMenu.Controls.Add(this.labelChat);
-            this.groupBoxMenu.Controls.Add(this.labelExsplore);
-            this.groupBoxMenu.Controls.Add(this.buttonContact);
-            this.groupBoxMenu.Controls.Add(this.buttonPrivacy);
-            this.groupBoxMenu.Controls.Add(this.buttonSetting);
-            this.groupBoxMenu.Controls.Add(this.buttonColls);
-            this.groupBoxMenu.Controls.Add(this.buttonChat);
-            this.groupBoxMenu.Controls.Add(this.buttonExplore);
-            this.groupBoxMenu.Location = new System.Drawing.Point(10, 9);
-            this.groupBoxMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxMenu.Name = "groupBoxMenu";
-            this.groupBoxMenu.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxMenu.Size = new System.Drawing.Size(195, 453);
-            this.groupBoxMenu.TabIndex = 1;
-            this.groupBoxMenu.TabStop = false;
-            // 
-            // labelLogOut
-            // 
-            this.labelLogOut.AutoSize = true;
-            this.labelLogOut.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelLogOut.Location = new System.Drawing.Point(46, 421);
-            this.labelLogOut.Name = "labelLogOut";
-            this.labelLogOut.Size = new System.Drawing.Size(42, 16);
-            this.labelLogOut.TabIndex = 23;
-            this.labelLogOut.Text = "Log out";
-            // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
-            this.buttonLogOut.Location = new System.Drawing.Point(5, 415);
-            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(35, 28);
-            this.buttonLogOut.TabIndex = 22;
-            this.buttonLogOut.UseVisualStyleBackColor = true;
-            // 
-            // labelUserUameLeft
-            // 
-            this.labelUserUameLeft.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUserUameLeft.Location = new System.Drawing.Point(46, 6);
-            this.labelUserUameLeft.Name = "labelUserUameLeft";
-            this.labelUserUameLeft.Size = new System.Drawing.Size(92, 22);
-            this.labelUserUameLeft.TabIndex = 11;
-            this.labelUserUameLeft.Text = "User name";
-            this.labelUserUameLeft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBoxAvatarLeft
-            // 
-            this.pictureBoxAvatarLeft.Location = new System.Drawing.Point(5, 6);
-            this.pictureBoxAvatarLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxAvatarLeft.Name = "pictureBoxAvatarLeft";
-            this.pictureBoxAvatarLeft.Size = new System.Drawing.Size(30, 22);
-            this.pictureBoxAvatarLeft.TabIndex = 10;
-            this.pictureBoxAvatarLeft.TabStop = false;
-            // 
-            // labelSetting
-            // 
-            this.labelSetting.AutoSize = true;
-            this.labelSetting.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSetting.Location = new System.Drawing.Point(46, 200);
-            this.labelSetting.Name = "labelSetting";
-            this.labelSetting.Size = new System.Drawing.Size(42, 16);
-            this.labelSetting.TabIndex = 21;
-            this.labelSetting.Text = "Setting";
-            // 
-            // labelPrivacy
-            // 
-            this.labelPrivacy.AutoSize = true;
-            this.labelPrivacy.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPrivacy.Location = new System.Drawing.Point(46, 167);
-            this.labelPrivacy.Name = "labelPrivacy";
-            this.labelPrivacy.Size = new System.Drawing.Size(43, 16);
-            this.labelPrivacy.TabIndex = 20;
-            this.labelPrivacy.Text = "Privacy";
-            // 
-            // labelContact
-            // 
-            this.labelContact.AutoSize = true;
-            this.labelContact.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelContact.Location = new System.Drawing.Point(46, 135);
-            this.labelContact.Name = "labelContact";
-            this.labelContact.Size = new System.Drawing.Size(46, 16);
-            this.labelContact.TabIndex = 19;
-            this.labelContact.Text = "Contact";
-            // 
-            // labelColls
-            // 
-            this.labelColls.AutoSize = true;
-            this.labelColls.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelColls.Location = new System.Drawing.Point(46, 103);
-            this.labelColls.Name = "labelColls";
-            this.labelColls.Size = new System.Drawing.Size(32, 16);
-            this.labelColls.TabIndex = 18;
-            this.labelColls.Text = "Colls";
-            // 
-            // labelChat
-            // 
-            this.labelChat.AutoSize = true;
-            this.labelChat.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelChat.Location = new System.Drawing.Point(46, 70);
-            this.labelChat.Name = "labelChat";
-            this.labelChat.Size = new System.Drawing.Size(30, 16);
-            this.labelChat.TabIndex = 17;
-            this.labelChat.Text = "Chat";
-            // 
-            // labelExsplore
-            // 
-            this.labelExsplore.AutoSize = true;
-            this.labelExsplore.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelExsplore.Location = new System.Drawing.Point(46, 38);
-            this.labelExsplore.Name = "labelExsplore";
-            this.labelExsplore.Size = new System.Drawing.Size(49, 16);
-            this.labelExsplore.TabIndex = 16;
-            this.labelExsplore.Text = "Exsplore";
-            // 
-            // buttonContact
-            // 
-            this.buttonContact.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonContact.Image = ((System.Drawing.Image)(resources.GetObject("buttonContact.Image")));
-            this.buttonContact.Location = new System.Drawing.Point(5, 129);
-            this.buttonContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonContact.Name = "buttonContact";
-            this.buttonContact.Size = new System.Drawing.Size(35, 28);
-            this.buttonContact.TabIndex = 15;
-            this.buttonContact.UseVisualStyleBackColor = true;
-            // 
-            // buttonPrivacy
-            // 
-            this.buttonPrivacy.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonPrivacy.Image = ((System.Drawing.Image)(resources.GetObject("buttonPrivacy.Image")));
-            this.buttonPrivacy.Location = new System.Drawing.Point(5, 161);
-            this.buttonPrivacy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonPrivacy.Name = "buttonPrivacy";
-            this.buttonPrivacy.Size = new System.Drawing.Size(35, 28);
-            this.buttonPrivacy.TabIndex = 14;
-            this.buttonPrivacy.UseVisualStyleBackColor = true;
-            // 
-            // buttonSetting
-            // 
-            this.buttonSetting.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonSetting.Image = ((System.Drawing.Image)(resources.GetObject("buttonSetting.Image")));
-            this.buttonSetting.Location = new System.Drawing.Point(5, 194);
-            this.buttonSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSetting.Name = "buttonSetting";
-            this.buttonSetting.Size = new System.Drawing.Size(35, 28);
-            this.buttonSetting.TabIndex = 13;
-            this.buttonSetting.UseVisualStyleBackColor = true;
-            // 
-            // buttonColls
-            // 
-            this.buttonColls.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonColls.Image = ((System.Drawing.Image)(resources.GetObject("buttonColls.Image")));
-            this.buttonColls.Location = new System.Drawing.Point(5, 97);
-            this.buttonColls.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonColls.Name = "buttonColls";
-            this.buttonColls.Size = new System.Drawing.Size(35, 28);
-            this.buttonColls.TabIndex = 12;
-            this.buttonColls.UseVisualStyleBackColor = true;
-            // 
-            // buttonChat
-            // 
-            this.buttonChat.BackColor = System.Drawing.Color.Gray;
-            this.buttonChat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonChat.Image = ((System.Drawing.Image)(resources.GetObject("buttonChat.Image")));
-            this.buttonChat.Location = new System.Drawing.Point(5, 64);
-            this.buttonChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonChat.Name = "buttonChat";
-            this.buttonChat.Size = new System.Drawing.Size(35, 28);
-            this.buttonChat.TabIndex = 11;
-            this.buttonChat.UseVisualStyleBackColor = false;
-            // 
-            // buttonExplore
-            // 
-            this.buttonExplore.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonExplore.Image = ((System.Drawing.Image)(resources.GetObject("buttonExplore.Image")));
-            this.buttonExplore.Location = new System.Drawing.Point(5, 32);
-            this.buttonExplore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonExplore.Name = "buttonExplore";
-            this.buttonExplore.Size = new System.Drawing.Size(35, 28);
-            this.buttonExplore.TabIndex = 10;
-            this.buttonExplore.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxChat
-            // 
-            this.groupBoxChat.BackColor = System.Drawing.Color.Gray;
-            this.groupBoxChat.Controls.Add(this.listBoxMessages);
-            this.groupBoxChat.Controls.Add(this.textBoxMessage);
-            this.groupBoxChat.Controls.Add(this.buttonSend);
-            this.groupBoxChat.Controls.Add(this.buttonSendVoice);
-            this.groupBoxChat.Controls.Add(this.buttonSendImage);
-            this.groupBoxChat.Controls.Add(this.buttonChatEnd);
-            this.groupBoxChat.Controls.Add(this.buttonVoiceChat);
-            this.groupBoxChat.Controls.Add(this.buttonVideoChat);
-            this.groupBoxChat.Controls.Add(this.labelUserNameCenter);
-            this.groupBoxChat.Controls.Add(this.pictureBoxAvatarCenter);
-            this.groupBoxChat.Location = new System.Drawing.Point(500, 64);
-            this.groupBoxChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxChat.Name = "groupBoxChat";
-            this.groupBoxChat.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxChat.Size = new System.Drawing.Size(469, 398);
-            this.groupBoxChat.TabIndex = 0;
-            this.groupBoxChat.TabStop = false;
-            this.groupBoxChat.Text = "x";
-            // 
-            // listBoxMessages
-            // 
-            this.listBoxMessages.BackColor = System.Drawing.Color.Gray;
-            this.listBoxMessages.FormattingEnabled = true;
-            this.listBoxMessages.ItemHeight = 15;
-            this.listBoxMessages.Location = new System.Drawing.Point(14, 41);
-            this.listBoxMessages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBoxMessages.Name = "listBoxMessages";
-            this.listBoxMessages.Size = new System.Drawing.Size(446, 319);
-            this.listBoxMessages.TabIndex = 28;
-            // 
-            // textBoxMessage
-            // 
-            this.textBoxMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBoxMessage.Location = new System.Drawing.Point(14, 367);
-            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(288, 23);
-            this.textBoxMessage.TabIndex = 27;
-            // 
-            // buttonSend
-            // 
-            this.buttonSend.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonSend.Image = ((System.Drawing.Image)(resources.GetObject("buttonSend.Image")));
-            this.buttonSend.Location = new System.Drawing.Point(424, 366);
-            this.buttonSend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(35, 28);
-            this.buttonSend.TabIndex = 26;
-            this.buttonSend.UseVisualStyleBackColor = true;
-            // 
-            // buttonSendVoice
-            // 
-            this.buttonSendVoice.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonSendVoice.Image = ((System.Drawing.Image)(resources.GetObject("buttonSendVoice.Image")));
-            this.buttonSendVoice.Location = new System.Drawing.Point(374, 366);
-            this.buttonSendVoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSendVoice.Name = "buttonSendVoice";
-            this.buttonSendVoice.Size = new System.Drawing.Size(35, 28);
-            this.buttonSendVoice.TabIndex = 25;
-            this.buttonSendVoice.UseVisualStyleBackColor = true;
-            // 
-            // buttonSendImage
-            // 
-            this.buttonSendImage.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonSendImage.Image = ((System.Drawing.Image)(resources.GetObject("buttonSendImage.Image")));
-            this.buttonSendImage.Location = new System.Drawing.Point(320, 365);
-            this.buttonSendImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSendImage.Name = "buttonSendImage";
-            this.buttonSendImage.Size = new System.Drawing.Size(35, 28);
-            this.buttonSendImage.TabIndex = 24;
-            this.buttonSendImage.UseVisualStyleBackColor = true;
-            // 
-            // buttonChatEnd
-            // 
-            this.buttonChatEnd.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonChatEnd.Image = ((System.Drawing.Image)(resources.GetObject("buttonChatEnd.Image")));
-            this.buttonChatEnd.Location = new System.Drawing.Point(424, 5);
-            this.buttonChatEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonChatEnd.Name = "buttonChatEnd";
-            this.buttonChatEnd.Size = new System.Drawing.Size(36, 21);
-            this.buttonChatEnd.TabIndex = 9;
-            this.buttonChatEnd.UseVisualStyleBackColor = true;
-            // 
-            // buttonVoiceChat
-            // 
-            this.buttonVoiceChat.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonVoiceChat.Image = ((System.Drawing.Image)(resources.GetObject("buttonVoiceChat.Image")));
-            this.buttonVoiceChat.Location = new System.Drawing.Point(383, 4);
-            this.buttonVoiceChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonVoiceChat.Name = "buttonVoiceChat";
-            this.buttonVoiceChat.Size = new System.Drawing.Size(36, 22);
-            this.buttonVoiceChat.TabIndex = 8;
-            this.buttonVoiceChat.UseVisualStyleBackColor = true;
-            // 
-            // buttonVideoChat
-            // 
-            this.buttonVideoChat.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonVideoChat.Image = ((System.Drawing.Image)(resources.GetObject("buttonVideoChat.Image")));
-            this.buttonVideoChat.Location = new System.Drawing.Point(342, 4);
-            this.buttonVideoChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonVideoChat.Name = "buttonVideoChat";
-            this.buttonVideoChat.Size = new System.Drawing.Size(36, 22);
-            this.buttonVideoChat.TabIndex = 7;
-            this.buttonVideoChat.UseVisualStyleBackColor = true;
-            // 
-            // labelUserNameCenter
-            // 
-            this.labelUserNameCenter.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUserNameCenter.Location = new System.Drawing.Point(49, 4);
-            this.labelUserNameCenter.Name = "labelUserNameCenter";
-            this.labelUserNameCenter.Size = new System.Drawing.Size(92, 22);
-            this.labelUserNameCenter.TabIndex = 6;
-            this.labelUserNameCenter.Text = "User name";
-            this.labelUserNameCenter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBoxAvatarCenter
-            // 
-            this.pictureBoxAvatarCenter.Location = new System.Drawing.Point(14, 4);
-            this.pictureBoxAvatarCenter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxAvatarCenter.Name = "pictureBoxAvatarCenter";
-            this.pictureBoxAvatarCenter.Size = new System.Drawing.Size(30, 22);
-            this.pictureBoxAvatarCenter.TabIndex = 5;
-            this.pictureBoxAvatarCenter.TabStop = false;
-            // 
-            // panel
-            // 
-            this.panel.BackColor = System.Drawing.Color.Gray;
-            this.panel.Controls.Add(this.labelUserNameRight);
-            this.panel.Controls.Add(this.pictureBoxAvatarRight);
-            this.panel.Controls.Add(this.buttonAlert);
-            this.panel.Controls.Add(this.buttonNewChat);
-            this.panel.Controls.Add(this.labelChatTitle);
-            this.panel.Location = new System.Drawing.Point(220, 9);
-            this.panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(748, 36);
-            this.panel.TabIndex = 2;
-            // 
-            // labelUserNameRight
-            // 
-            this.labelUserNameRight.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUserNameRight.Location = new System.Drawing.Point(662, 7);
-            this.labelUserNameRight.Name = "labelUserNameRight";
-            this.labelUserNameRight.Size = new System.Drawing.Size(92, 22);
-            this.labelUserNameRight.TabIndex = 4;
-            this.labelUserNameRight.Text = "User name";
-            this.labelUserNameRight.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBoxAvatarRight
-            // 
-            this.pictureBoxAvatarRight.Location = new System.Drawing.Point(627, 7);
-            this.pictureBoxAvatarRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxAvatarRight.Name = "pictureBoxAvatarRight";
-            this.pictureBoxAvatarRight.Size = new System.Drawing.Size(30, 22);
-            this.pictureBoxAvatarRight.TabIndex = 3;
-            this.pictureBoxAvatarRight.TabStop = false;
-            // 
-            // buttonAlert
-            // 
-            this.buttonAlert.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonAlert.Image = ((System.Drawing.Image)(resources.GetObject("buttonAlert.Image")));
-            this.buttonAlert.Location = new System.Drawing.Point(586, 7);
-            this.buttonAlert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonAlert.Name = "buttonAlert";
-            this.buttonAlert.Size = new System.Drawing.Size(36, 22);
-            this.buttonAlert.TabIndex = 2;
-            this.buttonAlert.UseVisualStyleBackColor = true;
-            // 
-            // buttonNewChat
-            // 
-            this.buttonNewChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonNewChat.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonNewChat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonNewChat.Location = new System.Drawing.Point(490, 7);
-            this.buttonNewChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonNewChat.Name = "buttonNewChat";
-            this.buttonNewChat.Size = new System.Drawing.Size(91, 22);
-            this.buttonNewChat.TabIndex = 1;
-            this.buttonNewChat.Text = "+ New Chat";
-            this.buttonNewChat.UseVisualStyleBackColor = false;
-            // 
-            // labelChatTitle
-            // 
-            this.labelChatTitle.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelChatTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelChatTitle.Name = "labelChatTitle";
-            this.labelChatTitle.Size = new System.Drawing.Size(99, 36);
-            this.labelChatTitle.TabIndex = 0;
-            this.labelChatTitle.Text = "Chat";
-            this.labelChatTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            tabPagePrimary.BackColor = Color.Gray;
+            tabPagePrimary.Controls.Add(listBoxGroups);
+            tabPagePrimary.Location = new Point(8, 40);
+            tabPagePrimary.Margin = new Padding(6, 4, 6, 4);
+            tabPagePrimary.Name = "tabPagePrimary";
+            tabPagePrimary.Padding = new Padding(6, 4, 6, 4);
+            tabPagePrimary.Size = new Size(419, 722);
+            tabPagePrimary.TabIndex = 0;
+            tabPagePrimary.Text = "Primary";
             // 
             // listBoxGroups
             // 
-            this.listBoxGroups.FormattingEnabled = true;
-            this.listBoxGroups.ItemHeight = 14;
-            this.listBoxGroups.Location = new System.Drawing.Point(6, 5);
-            this.listBoxGroups.Name = "listBoxGroups";
-            this.listBoxGroups.Size = new System.Drawing.Size(214, 326);
-            this.listBoxGroups.TabIndex = 0;
+            listBoxGroups.FormattingEnabled = true;
+            listBoxGroups.ItemHeight = 26;
+            listBoxGroups.Location = new Point(11, 11);
+            listBoxGroups.Margin = new Padding(6, 6, 6, 6);
+            listBoxGroups.Name = "listBoxGroups";
+            listBoxGroups.Size = new Size(394, 680);
+            listBoxGroups.TabIndex = 0;
+            // 
+            // tabPageGroups
+            // 
+            tabPageGroups.BackColor = Color.Gray;
+            tabPageGroups.Location = new Point(8, 40);
+            tabPageGroups.Margin = new Padding(6, 4, 6, 4);
+            tabPageGroups.Name = "tabPageGroups";
+            tabPageGroups.Padding = new Padding(6, 4, 6, 4);
+            tabPageGroups.Size = new Size(419, 722);
+            tabPageGroups.TabIndex = 1;
+            tabPageGroups.Text = "Groups";
+            // 
+            // tabPageArchive
+            // 
+            tabPageArchive.BackColor = Color.Gray;
+            tabPageArchive.Font = new Font("Impact", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            tabPageArchive.Location = new Point(8, 40);
+            tabPageArchive.Margin = new Padding(6, 4, 6, 4);
+            tabPageArchive.Name = "tabPageArchive";
+            tabPageArchive.Padding = new Padding(6, 4, 6, 4);
+            tabPageArchive.RightToLeft = RightToLeft.No;
+            tabPageArchive.Size = new Size(419, 722);
+            tabPageArchive.TabIndex = 2;
+            tabPageArchive.Text = "Archive";
+            // 
+            // groupBoxInbox
+            // 
+            groupBoxInbox.BackColor = Color.Gray;
+            groupBoxInbox.Controls.Add(Primary);
+            groupBoxInbox.Controls.Add(labelInbox);
+            groupBoxInbox.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBoxInbox.Location = new Point(409, 137);
+            groupBoxInbox.Margin = new Padding(6, 4, 6, 4);
+            groupBoxInbox.Name = "groupBoxInbox";
+            groupBoxInbox.Padding = new Padding(6, 4, 6, 4);
+            groupBoxInbox.Size = new Size(488, 849);
+            groupBoxInbox.TabIndex = 0;
+            groupBoxInbox.TabStop = false;
+            // 
+            // labelInbox
+            // 
+            labelInbox.Location = new Point(9, 0);
+            labelInbox.Margin = new Padding(6, 0, 6, 0);
+            labelInbox.Name = "labelInbox";
+            labelInbox.Size = new Size(130, 55);
+            labelInbox.TabIndex = 0;
+            labelInbox.Text = "Inbox";
+            labelInbox.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // groupBoxMenu
+            // 
+            groupBoxMenu.BackColor = Color.Gray;
+            groupBoxMenu.Controls.Add(labelLogOut);
+            groupBoxMenu.Controls.Add(buttonLogOut);
+            groupBoxMenu.Controls.Add(labelUserUameLeft);
+            groupBoxMenu.Controls.Add(pictureBoxAvatarLeft);
+            groupBoxMenu.Controls.Add(labelSetting);
+            groupBoxMenu.Controls.Add(labelPrivacy);
+            groupBoxMenu.Controls.Add(labelContact);
+            groupBoxMenu.Controls.Add(labelColls);
+            groupBoxMenu.Controls.Add(labelChat);
+            groupBoxMenu.Controls.Add(labelExsplore);
+            groupBoxMenu.Controls.Add(buttonContact);
+            groupBoxMenu.Controls.Add(buttonPrivacy);
+            groupBoxMenu.Controls.Add(buttonSetting);
+            groupBoxMenu.Controls.Add(buttonColls);
+            groupBoxMenu.Controls.Add(buttonChat);
+            groupBoxMenu.Controls.Add(buttonExplore);
+            groupBoxMenu.Location = new Point(19, 19);
+            groupBoxMenu.Margin = new Padding(6, 4, 6, 4);
+            groupBoxMenu.Name = "groupBoxMenu";
+            groupBoxMenu.Padding = new Padding(6, 4, 6, 4);
+            groupBoxMenu.Size = new Size(362, 966);
+            groupBoxMenu.TabIndex = 1;
+            groupBoxMenu.TabStop = false;
+            // 
+            // labelLogOut
+            // 
+            labelLogOut.AutoSize = true;
+            labelLogOut.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelLogOut.Location = new Point(85, 898);
+            labelLogOut.Margin = new Padding(6, 0, 6, 0);
+            labelLogOut.Name = "labelLogOut";
+            labelLogOut.Size = new Size(82, 29);
+            labelLogOut.TabIndex = 23;
+            labelLogOut.Text = "Log out";
+            // 
+            // buttonLogOut
+            // 
+            buttonLogOut.ForeColor = SystemColors.ControlLight;
+            buttonLogOut.Image = (Image)resources.GetObject("buttonLogOut.Image");
+            buttonLogOut.Location = new Point(9, 885);
+            buttonLogOut.Margin = new Padding(6, 4, 6, 4);
+            buttonLogOut.Name = "buttonLogOut";
+            buttonLogOut.Size = new Size(65, 60);
+            buttonLogOut.TabIndex = 22;
+            buttonLogOut.UseVisualStyleBackColor = true;
+            // 
+            // labelUserUameLeft
+            // 
+            labelUserUameLeft.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserUameLeft.Location = new Point(85, 13);
+            labelUserUameLeft.Margin = new Padding(6, 0, 6, 0);
+            labelUserUameLeft.Name = "labelUserUameLeft";
+            labelUserUameLeft.Size = new Size(171, 47);
+            labelUserUameLeft.TabIndex = 11;
+            labelUserUameLeft.Text = "User name";
+            labelUserUameLeft.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarLeft
+            // 
+            pictureBoxAvatarLeft.Location = new Point(9, 13);
+            pictureBoxAvatarLeft.Margin = new Padding(6, 4, 6, 4);
+            pictureBoxAvatarLeft.Name = "pictureBoxAvatarLeft";
+            pictureBoxAvatarLeft.Size = new Size(56, 47);
+            pictureBoxAvatarLeft.TabIndex = 10;
+            pictureBoxAvatarLeft.TabStop = false;
+            // 
+            // labelSetting
+            // 
+            labelSetting.AutoSize = true;
+            labelSetting.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSetting.Location = new Point(85, 427);
+            labelSetting.Margin = new Padding(6, 0, 6, 0);
+            labelSetting.Name = "labelSetting";
+            labelSetting.Size = new Size(82, 29);
+            labelSetting.TabIndex = 21;
+            labelSetting.Text = "Setting";
+            // 
+            // labelPrivacy
+            // 
+            labelPrivacy.AutoSize = true;
+            labelPrivacy.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPrivacy.Location = new Point(85, 356);
+            labelPrivacy.Margin = new Padding(6, 0, 6, 0);
+            labelPrivacy.Name = "labelPrivacy";
+            labelPrivacy.Size = new Size(86, 29);
+            labelPrivacy.TabIndex = 20;
+            labelPrivacy.Text = "Privacy";
+            // 
+            // labelContact
+            // 
+            labelContact.AutoSize = true;
+            labelContact.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelContact.Location = new Point(85, 288);
+            labelContact.Margin = new Padding(6, 0, 6, 0);
+            labelContact.Name = "labelContact";
+            labelContact.Size = new Size(89, 29);
+            labelContact.TabIndex = 19;
+            labelContact.Text = "Contact";
+            // 
+            // labelColls
+            // 
+            labelColls.AutoSize = true;
+            labelColls.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelColls.Location = new Point(85, 220);
+            labelColls.Margin = new Padding(6, 0, 6, 0);
+            labelColls.Name = "labelColls";
+            labelColls.Size = new Size(61, 29);
+            labelColls.TabIndex = 18;
+            labelColls.Text = "Colls";
+            // 
+            // labelChat
+            // 
+            labelChat.AutoSize = true;
+            labelChat.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelChat.Location = new Point(85, 149);
+            labelChat.Margin = new Padding(6, 0, 6, 0);
+            labelChat.Name = "labelChat";
+            labelChat.Size = new Size(58, 29);
+            labelChat.TabIndex = 17;
+            labelChat.Text = "Chat";
+            // 
+            // labelExsplore
+            // 
+            labelExsplore.AutoSize = true;
+            labelExsplore.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelExsplore.Location = new Point(85, 81);
+            labelExsplore.Margin = new Padding(6, 0, 6, 0);
+            labelExsplore.Name = "labelExsplore";
+            labelExsplore.Size = new Size(94, 29);
+            labelExsplore.TabIndex = 16;
+            labelExsplore.Text = "Exsplore";
+            // 
+            // buttonContact
+            // 
+            buttonContact.ForeColor = SystemColors.ControlLight;
+            buttonContact.Image = (Image)resources.GetObject("buttonContact.Image");
+            buttonContact.Location = new Point(9, 275);
+            buttonContact.Margin = new Padding(6, 4, 6, 4);
+            buttonContact.Name = "buttonContact";
+            buttonContact.Size = new Size(65, 60);
+            buttonContact.TabIndex = 15;
+            buttonContact.UseVisualStyleBackColor = true;
+            // 
+            // buttonPrivacy
+            // 
+            buttonPrivacy.ForeColor = SystemColors.ControlLight;
+            buttonPrivacy.Image = (Image)resources.GetObject("buttonPrivacy.Image");
+            buttonPrivacy.Location = new Point(9, 343);
+            buttonPrivacy.Margin = new Padding(6, 4, 6, 4);
+            buttonPrivacy.Name = "buttonPrivacy";
+            buttonPrivacy.Size = new Size(65, 60);
+            buttonPrivacy.TabIndex = 14;
+            buttonPrivacy.UseVisualStyleBackColor = true;
+            // 
+            // buttonSetting
+            // 
+            buttonSetting.ForeColor = SystemColors.ControlLight;
+            buttonSetting.Image = (Image)resources.GetObject("buttonSetting.Image");
+            buttonSetting.Location = new Point(9, 414);
+            buttonSetting.Margin = new Padding(6, 4, 6, 4);
+            buttonSetting.Name = "buttonSetting";
+            buttonSetting.Size = new Size(65, 60);
+            buttonSetting.TabIndex = 13;
+            buttonSetting.UseVisualStyleBackColor = true;
+            // 
+            // buttonColls
+            // 
+            buttonColls.ForeColor = SystemColors.ControlLight;
+            buttonColls.Image = (Image)resources.GetObject("buttonColls.Image");
+            buttonColls.Location = new Point(9, 207);
+            buttonColls.Margin = new Padding(6, 4, 6, 4);
+            buttonColls.Name = "buttonColls";
+            buttonColls.Size = new Size(65, 60);
+            buttonColls.TabIndex = 12;
+            buttonColls.UseVisualStyleBackColor = true;
+            // 
+            // buttonChat
+            // 
+            buttonChat.BackColor = Color.Gray;
+            buttonChat.ForeColor = SystemColors.ControlLightLight;
+            buttonChat.Image = (Image)resources.GetObject("buttonChat.Image");
+            buttonChat.Location = new Point(9, 137);
+            buttonChat.Margin = new Padding(6, 4, 6, 4);
+            buttonChat.Name = "buttonChat";
+            buttonChat.Size = new Size(65, 60);
+            buttonChat.TabIndex = 11;
+            buttonChat.UseVisualStyleBackColor = false;
+            // 
+            // buttonExplore
+            // 
+            buttonExplore.ForeColor = SystemColors.ControlLight;
+            buttonExplore.Image = (Image)resources.GetObject("buttonExplore.Image");
+            buttonExplore.Location = new Point(9, 68);
+            buttonExplore.Margin = new Padding(6, 4, 6, 4);
+            buttonExplore.Name = "buttonExplore";
+            buttonExplore.Size = new Size(65, 60);
+            buttonExplore.TabIndex = 10;
+            buttonExplore.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxChat
+            // 
+            groupBoxChat.BackColor = Color.Gray;
+            groupBoxChat.Controls.Add(listBoxMessages);
+            groupBoxChat.Controls.Add(textBoxMessage);
+            groupBoxChat.Controls.Add(buttonSend);
+            groupBoxChat.Controls.Add(buttonSendVoice);
+            groupBoxChat.Controls.Add(buttonSendImage);
+            groupBoxChat.Controls.Add(buttonChatEnd);
+            groupBoxChat.Controls.Add(buttonVoiceChat);
+            groupBoxChat.Controls.Add(buttonVideoChat);
+            groupBoxChat.Controls.Add(labelUserNameCenter);
+            groupBoxChat.Controls.Add(pictureBoxAvatarCenter);
+            groupBoxChat.Location = new Point(929, 137);
+            groupBoxChat.Margin = new Padding(6, 4, 6, 4);
+            groupBoxChat.Name = "groupBoxChat";
+            groupBoxChat.Padding = new Padding(6, 4, 6, 4);
+            groupBoxChat.Size = new Size(871, 849);
+            groupBoxChat.TabIndex = 0;
+            groupBoxChat.TabStop = false;
+            groupBoxChat.Text = "x";
+            // 
+            // listBoxMessages
+            // 
+            listBoxMessages.BackColor = Color.Gray;
+            listBoxMessages.FormattingEnabled = true;
+            listBoxMessages.ItemHeight = 32;
+            listBoxMessages.Location = new Point(26, 87);
+            listBoxMessages.Margin = new Padding(6, 4, 6, 4);
+            listBoxMessages.Name = "listBoxMessages";
+            listBoxMessages.Size = new Size(825, 676);
+            listBoxMessages.TabIndex = 28;
+            // 
+            // textBoxMessage
+            // 
+            textBoxMessage.BackColor = Color.FromArgb(224, 224, 224);
+            textBoxMessage.Location = new Point(26, 783);
+            textBoxMessage.Margin = new Padding(6, 4, 6, 4);
+            textBoxMessage.Name = "textBoxMessage";
+            textBoxMessage.Size = new Size(531, 39);
+            textBoxMessage.TabIndex = 27;
+            // 
+            // buttonSend
+            // 
+            buttonSend.ForeColor = SystemColors.ControlLight;
+            buttonSend.Image = (Image)resources.GetObject("buttonSend.Image");
+            buttonSend.Location = new Point(787, 781);
+            buttonSend.Margin = new Padding(6, 4, 6, 4);
+            buttonSend.Name = "buttonSend";
+            buttonSend.Size = new Size(65, 60);
+            buttonSend.TabIndex = 26;
+            buttonSend.UseVisualStyleBackColor = true;
+            // 
+            // buttonSendVoice
+            // 
+            buttonSendVoice.ForeColor = SystemColors.ControlLight;
+            buttonSendVoice.Image = (Image)resources.GetObject("buttonSendVoice.Image");
+            buttonSendVoice.Location = new Point(695, 781);
+            buttonSendVoice.Margin = new Padding(6, 4, 6, 4);
+            buttonSendVoice.Name = "buttonSendVoice";
+            buttonSendVoice.Size = new Size(65, 60);
+            buttonSendVoice.TabIndex = 25;
+            buttonSendVoice.UseVisualStyleBackColor = true;
+            // 
+            // buttonSendImage
+            // 
+            buttonSendImage.ForeColor = SystemColors.ControlLight;
+            buttonSendImage.Image = (Image)resources.GetObject("buttonSendImage.Image");
+            buttonSendImage.Location = new Point(594, 779);
+            buttonSendImage.Margin = new Padding(6, 4, 6, 4);
+            buttonSendImage.Name = "buttonSendImage";
+            buttonSendImage.Size = new Size(65, 60);
+            buttonSendImage.TabIndex = 24;
+            buttonSendImage.UseVisualStyleBackColor = true;
+            // 
+            // buttonChatEnd
+            // 
+            buttonChatEnd.ForeColor = SystemColors.ControlLight;
+            buttonChatEnd.Image = (Image)resources.GetObject("buttonChatEnd.Image");
+            buttonChatEnd.Location = new Point(787, 11);
+            buttonChatEnd.Margin = new Padding(6, 4, 6, 4);
+            buttonChatEnd.Name = "buttonChatEnd";
+            buttonChatEnd.Size = new Size(67, 45);
+            buttonChatEnd.TabIndex = 9;
+            buttonChatEnd.UseVisualStyleBackColor = true;
+            // 
+            // buttonVoiceChat
+            // 
+            buttonVoiceChat.ForeColor = SystemColors.ControlLight;
+            buttonVoiceChat.Image = (Image)resources.GetObject("buttonVoiceChat.Image");
+            buttonVoiceChat.Location = new Point(711, 9);
+            buttonVoiceChat.Margin = new Padding(6, 4, 6, 4);
+            buttonVoiceChat.Name = "buttonVoiceChat";
+            buttonVoiceChat.Size = new Size(67, 47);
+            buttonVoiceChat.TabIndex = 8;
+            buttonVoiceChat.UseVisualStyleBackColor = true;
+            // 
+            // buttonVideoChat
+            // 
+            buttonVideoChat.ForeColor = SystemColors.ControlLight;
+            buttonVideoChat.Image = (Image)resources.GetObject("buttonVideoChat.Image");
+            buttonVideoChat.Location = new Point(635, 9);
+            buttonVideoChat.Margin = new Padding(6, 4, 6, 4);
+            buttonVideoChat.Name = "buttonVideoChat";
+            buttonVideoChat.Size = new Size(67, 47);
+            buttonVideoChat.TabIndex = 7;
+            buttonVideoChat.UseVisualStyleBackColor = true;
+            // 
+            // labelUserNameCenter
+            // 
+            labelUserNameCenter.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserNameCenter.Location = new Point(91, 9);
+            labelUserNameCenter.Margin = new Padding(6, 0, 6, 0);
+            labelUserNameCenter.Name = "labelUserNameCenter";
+            labelUserNameCenter.Size = new Size(171, 47);
+            labelUserNameCenter.TabIndex = 6;
+            labelUserNameCenter.Text = "User name";
+            labelUserNameCenter.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarCenter
+            // 
+            pictureBoxAvatarCenter.Location = new Point(26, 9);
+            pictureBoxAvatarCenter.Margin = new Padding(6, 4, 6, 4);
+            pictureBoxAvatarCenter.Name = "pictureBoxAvatarCenter";
+            pictureBoxAvatarCenter.Size = new Size(56, 47);
+            pictureBoxAvatarCenter.TabIndex = 5;
+            pictureBoxAvatarCenter.TabStop = false;
+            // 
+            // panel
+            // 
+            panel.BackColor = Color.Gray;
+            panel.Controls.Add(labelUserNameRight);
+            panel.Controls.Add(pictureBoxAvatarRight);
+            panel.Controls.Add(buttonAlert);
+            panel.Controls.Add(buttonNewChat);
+            panel.Controls.Add(labelChatTitle);
+            panel.Location = new Point(409, 19);
+            panel.Margin = new Padding(6, 4, 6, 4);
+            panel.Name = "panel";
+            panel.Size = new Size(1389, 77);
+            panel.TabIndex = 2;
+            // 
+            // labelUserNameRight
+            // 
+            labelUserNameRight.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserNameRight.Location = new Point(1229, 15);
+            labelUserNameRight.Margin = new Padding(6, 0, 6, 0);
+            labelUserNameRight.Name = "labelUserNameRight";
+            labelUserNameRight.Size = new Size(171, 47);
+            labelUserNameRight.TabIndex = 4;
+            labelUserNameRight.Text = "User name";
+            labelUserNameRight.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBoxAvatarRight
+            // 
+            pictureBoxAvatarRight.Location = new Point(1164, 15);
+            pictureBoxAvatarRight.Margin = new Padding(6, 4, 6, 4);
+            pictureBoxAvatarRight.Name = "pictureBoxAvatarRight";
+            pictureBoxAvatarRight.Size = new Size(56, 47);
+            pictureBoxAvatarRight.TabIndex = 3;
+            pictureBoxAvatarRight.TabStop = false;
+            // 
+            // buttonAlert
+            // 
+            buttonAlert.ForeColor = SystemColors.ControlLight;
+            buttonAlert.Image = (Image)resources.GetObject("buttonAlert.Image");
+            buttonAlert.Location = new Point(1088, 15);
+            buttonAlert.Margin = new Padding(6, 4, 6, 4);
+            buttonAlert.Name = "buttonAlert";
+            buttonAlert.Size = new Size(67, 47);
+            buttonAlert.TabIndex = 2;
+            buttonAlert.UseVisualStyleBackColor = true;
+            // 
+            // buttonNewChat
+            // 
+            buttonNewChat.BackColor = Color.FromArgb(224, 224, 224);
+            buttonNewChat.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonNewChat.ForeColor = SystemColors.ActiveCaptionText;
+            buttonNewChat.Location = new Point(910, 15);
+            buttonNewChat.Margin = new Padding(6, 4, 6, 4);
+            buttonNewChat.Name = "buttonNewChat";
+            buttonNewChat.Size = new Size(169, 47);
+            buttonNewChat.TabIndex = 1;
+            buttonNewChat.Text = "+ New Chat";
+            buttonNewChat.UseVisualStyleBackColor = false;
+            buttonNewChat.Click += buttonNewChat_Click;
+            // 
+            // labelChatTitle
+            // 
+            labelChatTitle.Font = new Font("Impact", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelChatTitle.Location = new Point(0, 0);
+            labelChatTitle.Margin = new Padding(6, 0, 6, 0);
+            labelChatTitle.Name = "labelChatTitle";
+            labelChatTitle.Size = new Size(184, 77);
+            labelChatTitle.TabIndex = 0;
+            labelChatTitle.Text = "Chat";
+            labelChatTitle.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(979, 474);
-            this.Controls.Add(this.panel);
-            this.Controls.Add(this.groupBoxChat);
-            this.Controls.Add(this.groupBoxMenu);
-            this.Controls.Add(this.groupBoxInbox);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(1818, 1011);
+            Controls.Add(panel);
+            Controls.Add(groupBoxChat);
+            Controls.Add(groupBoxMenu);
+            Controls.Add(groupBoxInbox);
+            Margin = new Padding(6, 4, 6, 4);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
             Primary.ResumeLayout(false);
-            this.tabPagePrimary.ResumeLayout(false);
-            this.groupBoxInbox.ResumeLayout(false);
-            this.groupBoxMenu.ResumeLayout(false);
-            this.groupBoxMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarLeft)).EndInit();
-            this.groupBoxChat.ResumeLayout(false);
-            this.groupBoxChat.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarCenter)).EndInit();
-            this.panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatarRight)).EndInit();
-            this.ResumeLayout(false);
-
+            tabPagePrimary.ResumeLayout(false);
+            groupBoxInbox.ResumeLayout(false);
+            groupBoxMenu.ResumeLayout(false);
+            groupBoxMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarLeft).EndInit();
+            groupBoxChat.ResumeLayout(false);
+            groupBoxChat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarCenter).EndInit();
+            panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatarRight).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

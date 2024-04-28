@@ -23,7 +23,7 @@ namespace Client
         {
             ConnectToServer();
 
-            /*SignIn signIn = new SignIn(networkClient);
+            SignIn signIn = new SignIn(networkClient);
             this.Hide();
             signIn.ShowDialog();
 
@@ -33,24 +33,24 @@ namespace Client
             {
                 currentUser = signIn.currentUser;
                 this.Visible = true;
-                labelUserNameRight.Text = currentUser.Name;*/
-                UpdateMessageList();
-                UpdateGroupList();
-            //}
+                labelUserNameRight.Text = currentUser.Name;
+                //UpdateMessageList();
+                //UpdateGroupList();
+            }
         }
 
         private void ConnectToServer()
         {
-           
+
             if (networkClient != null && networkClient.Connect())
             {
                 MessageBox.Show("Connected to server successfully.");
-               
+
             }
             else
             {
                 MessageBox.Show("Failed to connect to server.");
-                
+
             }
         }
 
@@ -59,7 +59,7 @@ namespace Client
             string message = textBoxMessage.Text.Trim();
             if (!string.IsNullOrEmpty(message))
             {
-                SendMessageModel messageModel= new SendMessageModel()
+                SendMessageModel messageModel = new SendMessageModel()
                 {
                     Text = message,
                     UserId = currentUser.Id,
@@ -121,9 +121,9 @@ namespace Client
 
         private void buttonChat_Click(object sender, EventArgs e)
         {
-            
+
             MessageBox.Show("Opening chat...");
-            
+
         }
 
         private void buttonColls_Click(object sender, EventArgs e)
@@ -160,7 +160,7 @@ namespace Client
         {
             var response = networkClient.SendRequest(Methods.GetMessages, currentUser.Id.ToString());
 
-            if(response.IsSucces)
+            if (response.IsSucces)
             {
                 var messages = JsonSerializer.Deserialize<MessageModel[]>(response.Message);
 
@@ -197,6 +197,43 @@ namespace Client
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private async void buttonNewChat_Click(object sender, EventArgs e)
+        {
+            using (var newChatForm = new NewChatForm())
+            {
+                var result = newChatForm.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    string chatName = newChatForm.ChatName;
+                    var selectedUsers = newChatForm.SelectedUsers;
+
+                    var newChat = new ChatModel
+                    {
+                        Title = chatName
+                    };
+
+                    foreach (var user in selectedUsers)
+                    {
+                        newChat.Users.Add(user);
+                    }
+
+                    var json = JsonSerializer.Serialize(newChat);
+
+                    var response = networkClient.SendRequest(Methods.CreateChat, json);
+
+                    if (response.IsSucces)
+                    {
+                        MessageBox.Show("Chat created successfully.");
+                        UpdateGroupList();
+                    }
+                    else
+                    {
+                        MessageBox.Show(response.Message);
+                    }
+                }
             }
         }
     }
