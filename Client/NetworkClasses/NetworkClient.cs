@@ -84,6 +84,21 @@ namespace Client.NetworkClasses
             }
         }
 
+        public List<UserModel> GetUsers()
+        {
+            var response = SendRequest(Methods.GetUsers, "");
+
+            if (response.IsSucces)
+            {
+                return JsonSerializer.Deserialize<List<UserModel>>(response.Message);
+            }
+            else
+            {
+                Console.WriteLine("Failed to get users: " + response.Message);
+                return new List<UserModel>();
+            }
+        }
+
         public ResponseModel SendRequest(string method, string data)
         {
             if (!isConnected)
